@@ -3,7 +3,7 @@
   line-height: 16px;
 }
 .product__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $secondary-font;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
@@ -15,7 +15,7 @@
 
 }
 .product__link {
-  font-family: "Oswald", sans-serif;
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -30,7 +30,7 @@
 
 }
 .product__name {
-  font-family: "Oswald", sans-serif;
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
