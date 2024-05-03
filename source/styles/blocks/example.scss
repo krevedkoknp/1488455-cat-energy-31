@@ -2,7 +2,10 @@
 
 }
 .example__title {
-
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
 }
 .example__text {
 
@@ -11,11 +14,23 @@
 
 }
 .example__item {
-
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
 }
 .example__description {
-
+  font-size: 12;
+  line-height: 100%;
+  text-align: center;
 }
 .example__total {
-
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
 }
