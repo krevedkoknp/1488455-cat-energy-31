@@ -1,0 +1,28 @@
+.addition__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.addition__link {
+  text-decoration: none;
+}
+
+.addition__name {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.addition__quantity {
+  line-height: 14px;
+}
+
+.addition__prise {
+  line-height: 14px;
+}
