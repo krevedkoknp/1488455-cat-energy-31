@@ -2,12 +2,14 @@
   font-size: 12px;
   line-height: 16px;
 }
+
 .product__title {
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
 }
+
 .product__link {
   font-family: $secondary-font;
   font-size: 16px;
@@ -17,6 +19,7 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
 .product__name {
   font-family: $secondary-font;
   font-size: 16px;
@@ -24,6 +27,7 @@
   text-align: center;
   color: #222222;
 }
+
 .product__text {
   font-size: 16px;
   line-height: 18px;
