@@ -9,12 +9,9 @@
 .hero__title {
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
 }
 
 .hero__slogan {
   font-size: 14px;
-}
-
-.hero__link {
-  @include button;
 }

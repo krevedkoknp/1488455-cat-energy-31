@@ -7,14 +7,3 @@
     font-display: swap;
   }
 }
-
-@mixin button() {
-  background-color: $bg-basik-green;
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-  color: #ffffff;
-}
