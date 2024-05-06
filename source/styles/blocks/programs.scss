@@ -27,8 +27,8 @@
   display: block;
   width: 32px;
   height: 10px;
-  mask-position: center;
-  mask-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .programs__title--slim::before {
@@ -38,8 +38,8 @@
   display: block;
   height: 50px;
   width: 36px;
-  mask-position: center;
-  mask-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .programs__title--weight::before {
@@ -49,6 +49,6 @@
   display: block;
   height: 28px;
   width: 67px;
-  mask-position: center;
-  mask-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
 }

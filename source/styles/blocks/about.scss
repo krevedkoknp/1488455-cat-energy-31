@@ -5,3 +5,51 @@
   font-weight: 400;
   color: #000000;
 }
+
+.about__item--substances::before {
+  content: "";
+  background-image: url("../../icons/about-icon-substances.svg");
+  background-size: 30px 32px;
+  background-color: $bg-basik-accent;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about__item--form::before {
+  content: "";
+  background-image: url("../../icons/about-icon-form.svg");
+  background-size: 26px 28px;
+  background-color: $bg-basik-accent;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about__item--meal::before {
+  content: "";
+  background-image: url("../../icons/about-icon-meal.svg");
+  background-size: 25px 30px;
+  background-color: $bg-basik-accent;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about__item--change::before {
+  content: "";
+  background-image: url("../../icons/about-icon-change.svg");
+  background-size: 26px 31px;
+  background-color: $bg-basik-accent;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
