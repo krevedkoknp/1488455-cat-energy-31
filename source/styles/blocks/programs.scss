@@ -42,6 +42,17 @@
   background-repeat: no-repeat;
 }
 
+.programs__title--slim::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+  background-color: $bg-basik-accent;
+  border-radius: 50%;
+  background-position: center;
+}
+
 .programs__title--weight::before {
   content: "";
   background-image: url("../../icons/programs-weight.svg");
@@ -51,4 +62,15 @@
   width: 67px;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.programs__title--weight::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+  background-color: $bg-basik-accent;
+  border-radius: 50%;
+  background-position: center;
 }

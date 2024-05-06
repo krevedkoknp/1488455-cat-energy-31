@@ -1,3 +1,13 @@
 .copyright {
   margin: 0;
 }
+
+.copyright__link {
+  display: block;
+  height: 22px;
+  width: 28px;
+  background-color: #666666;
+  mask-image: url("../../icons/html-academy-logo.svg");
+  mask-position: center;
+  mask-repeat: no-repeat;
+}
