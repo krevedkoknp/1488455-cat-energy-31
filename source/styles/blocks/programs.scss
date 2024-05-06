@@ -1,5 +1,52 @@
+.programs__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .programs__item {
   background-color: #f2f2f2;
+  position: relative;
+
+}
+
+.programs__item::after {
+  content: "";
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.programs__item::before {
+  content: "";
+  display: block;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+  background-color: $bg-basik-accent;
+  border-radius: 50%;
+}
+
+.programs__item--slim::after {
+  background-image: url("../../icons/programs-slim.svg");
+  background-size: 36px 50px;
+  height: 50px;
+  width: 36px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.programs__item--weight::after {
+  background-image: url("../../icons/programs-weight.svg");
+  background-size: 67px 28px;
+  height: 28px;
+  width: 67px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .programs__title {
@@ -22,55 +69,12 @@
 
 .programs__link::after {
   content: "";
-  background-image: url("../../icons/arrow-icon.svg");
-  background-size: 32px 10px;
   display: block;
+  background-color: #000000;
+  mask-image: url("../../icons/arrow-icon.svg");
+  mask-size: 32px 10px;
   width: 32px;
   height: 10px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.programs__title--slim::before {
-  content: "";
-  background-image: url("../../icons/programs-slim.svg");
-  background-size: 36px 50px;
-  display: block;
-  height: 50px;
-  width: 36px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.programs__title--slim::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 50px;
-  background-size: 50px 50px;
-  background-color: $bg-basik-accent;
-  border-radius: 50%;
-  background-position: center;
-}
-
-.programs__title--weight::before {
-  content: "";
-  background-image: url("../../icons/programs-weight.svg");
-  background-size: 67px 28px;
-  display: block;
-  height: 28px;
-  width: 67px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.programs__title--weight::after {
-  content: "";
-  display: block;
-  width: 50px;
-  height: 50px;
-  background-size: 50px 50px;
-  background-color: $bg-basik-accent;
-  border-radius: 50%;
-  background-position: center;
+  mask-position: center;
+  mask-repeat: no-repeat;
 }
