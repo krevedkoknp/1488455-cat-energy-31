@@ -5,6 +5,8 @@
 }
 
 .copyright-link::after {
+  text-decoration: none;
+  color: #444444;
   content: "";
   display: block;
   height: 22px;
