@@ -7,13 +7,37 @@
   text-align: center;
 }
 
+.navigation__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navigation__logo {
+  height: 38px;
+}
+
 .navigation__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+.navigation__item {
+
+}
+
 
 .navigation__link {
   text-decoration: none;
+  display: block;
   color: #000000;
+  padding: 22px 35px 24px;
 }
+
+
+
+
