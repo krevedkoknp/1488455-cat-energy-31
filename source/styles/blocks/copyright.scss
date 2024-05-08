@@ -1,13 +1,10 @@
-.copyright {
+.copyright-link {
   margin: 0;
-}
-
-.copyright__link {
   text-decoration: none;
   color: #444444;
 }
 
-.copyright__link::after {
+.copyright-link::after {
   content: "";
   display: block;
   height: 22px;
@@ -18,10 +15,10 @@
   mask-repeat: no-repeat;
 }
 
-.copyright__link:hover {
+.copyright-link:hover {
   color: $bg-basik-accent;
 }
 
-.copyright__link:hover::after {
+.copyright-link:hover::after {
   background-color: $bg-basik-accent;
 }
