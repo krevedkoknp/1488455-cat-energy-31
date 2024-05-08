@@ -7,3 +7,23 @@
   text-transform: uppercase;
   color: #111111;
 }
+
+.contacts__map {
+  display: block;
+  height: 362px;
+  background-image: url("../../images/background/map-background-mobile@1x.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+    background-image: url("../../images/background/map-background-tablet@1x.png");
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
+    background-image: url("../../images/background/map-background-desktop@1x.png");
+  }
+}

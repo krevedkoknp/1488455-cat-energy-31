@@ -1,7 +1,57 @@
+.about__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .about__title {
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
   color: #000000;
+}
+
+.about__item {
+  justify-content: space-between;
+}
+
+.about__item::before {
+  content: "";
+  background-color: $bg-basik-accent;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+  }
+
+}
+
+.about__item--substances::before {
+  background-image: url("../../icons/about-icon-substances.svg");
+  background-size: 30px 32px;
+}
+
+.about__item--form::before {
+  background-image: url("../../icons/about-icon-form.svg");
+  background-size: 26px 28px;
+
+}
+
+.about__item--meal::before {
+  background-image: url("../../icons/about-icon-meal.svg");
+  background-size: 25px 30px;
+}
+
+.about__item--change::before {
+  background-image: url("../../icons/about-icon-change.svg");
+  background-size: 26px 31px;
 }

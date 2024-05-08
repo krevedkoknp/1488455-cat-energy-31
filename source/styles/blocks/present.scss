@@ -1,5 +1,18 @@
 .present {
-  background-color: $bg-basik-green;
+  background-color: $bg-basik-accent;
+  background-image: url("../../images/background/present-background@1x.png");
+  width: 280px;
+  height: 290px;
+}
+.present::before {
+  content: "";
+  display: block;
+  height: 78px;
+  width: 80px;
+  background-color: #ffffff;
+  mask-image: url("../../icons/present-icon.svg");
+  mask-position: center;
+  mask-repeat: no-repeat;
 }
 
 .present__condition {
