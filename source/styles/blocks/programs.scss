@@ -16,7 +16,6 @@
   display: block;
   background-position: center;
   background-repeat: no-repeat;
-
 }
 
 .programs__item::before {
@@ -39,7 +38,6 @@
     width: 100px;
     height: 106px;
   }
-
 }
 
 .programs__item--slim::after {
@@ -55,7 +53,6 @@
     width: 140px;
     height: 194px;
     background-size: 140px 194px;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -78,16 +75,13 @@
     width: 268px;
     height: 112px;
     background-size: 268px 112px;
-
   }
 
   @media (min-width: $desktop-width) {
     width: 134px;
     height: 56px;
     background-size: 134px 56px;
-
   }
-
 }
 
 .programs__title {

@@ -8,6 +8,8 @@ img {
   height: auto;
 }
 
-*, :after, :before {
+*,
+ ::after,
+ ::before {
   box-sizing: border-box;
 }
