@@ -17,6 +17,9 @@
   height: 38px;
 }
 
+.navigation__logo-image {
+}
+
 .navigation__list {
   margin: 0;
   padding: 0;
@@ -38,6 +41,21 @@
   padding: 22px 35px 24px;
 }
 
+.navigation__toogle {
+  width: 24px;
+  height: 24px;
+  color: $base-color-title;
+  background-color: $bg-basik;
+  background-image: url("../../icons/stack.svg#burger-menu");
+  background-size: 24px 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.navigation__toogle--close {
+  background-image: url("../../icons/stack.svg#close-button");
+}
 
 
 
