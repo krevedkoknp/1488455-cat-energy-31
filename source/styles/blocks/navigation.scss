@@ -69,10 +69,17 @@
 
 @media (min-width: $tablet-width) {
   .navigation {
+    font-size: 18px;
+  line-height: 24px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     width: 704px;
+  }
+
+  .navigation__wrapper {
+    margin: 0;
+    padding: 0;
   }
 
   .navigation__logo {
@@ -113,11 +120,6 @@
     width: 1220px;
   }
 
-  .navigation__wrapper {
-    margin: 0;
-    padding: 0;
-  }
-
   .navigation__logo {
     width: 202px;
     height: 59px;
@@ -133,10 +135,6 @@
     flex-flow: row wrap;
     justify-content: space-between;
     width: 475px;
-  }
-
-  .navigation__link {
-    padding: 0;
   }
 }
 
