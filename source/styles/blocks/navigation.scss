@@ -20,6 +20,7 @@
   height: 38px;
   width: 190px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .navigation__logo-text {
@@ -70,11 +71,13 @@
 @media (min-width: $tablet-width) {
   .navigation {
     font-size: 18px;
-  line-height: 24px;
+    line-height: 24px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     width: 704px;
+    padding-top: 20px;
+    margin-bottom: 65px;
   }
 
   .navigation__wrapper {
@@ -114,10 +117,15 @@
 
 @media (min-width: $desktop-width) {
   .navigation {
+    line-height: 30px;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     width: 1220px;
+    padding-top: 55px;
+  }
+
+  .navigation__wrapper {
   }
 
   .navigation__logo {
