@@ -35,5 +35,9 @@
   .main-footer__link {
     width: 128px;
   }
+
+  .main-footer__link::after {
+    display: none;
+  }
 }
 
