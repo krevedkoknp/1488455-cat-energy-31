@@ -11,6 +11,29 @@
 
 .main-footer__link {
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+  position: relative;
+  display: block;
+}
+
+.main-footer__link::after {
+  content: "";
+  border: 1px solid #d9d9d9;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .main-footer__link {
+    width: 128px;
+  }
 }
 

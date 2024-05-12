@@ -1,13 +1,12 @@
-.copyright-link {
+.copyright {
   margin: 0;
   text-decoration: none;
   color: #444444;
   position: relative;
+  align-items: baseline;
 }
 
-.copyright-link::after {
-  text-decoration: none;
-  color: #444444;
+.copyright::after {
   content: "";
   display: block;
   height: 27px;
@@ -22,10 +21,21 @@
   right: 0;
 }
 
-.copyright-link:hover {
+.copyright__link {
+  text-decoration: none;
+  color: #444444;
+}
+
+.copyright__link:hover {
   color: $bg-basik-accent;
 }
 
-.copyright-link:hover::after {
+.copyright__link:hover::after {
   background-color: $bg-basik-accent;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 168px;
+  }
 }
