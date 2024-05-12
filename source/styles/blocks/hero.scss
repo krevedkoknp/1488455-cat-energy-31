@@ -96,6 +96,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .hero {
+    min-height: 466px;
+  }
+
   .hero__title {
     margin: 0;
     font-size: 60px;
