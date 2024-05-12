@@ -2,6 +2,7 @@
   margin: 0;
   text-decoration: none;
   color: #444444;
+  position: relative;
 }
 
 .copyright-link::after {
@@ -9,12 +10,16 @@
   color: #444444;
   content: "";
   display: block;
-  height: 22px;
-  width: 60px;
+  height: 27px;
+  width: 34px;
   background-color: #666666;
   mask-image: url("../../icons/html-academy-logo.svg");
   mask-position: center;
   mask-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 0;
 }
 
 .copyright-link:hover {
