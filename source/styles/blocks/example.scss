@@ -2,10 +2,12 @@
   background-color: #eaeaea;
 }
 
-.example__container {
-  padding: 25px 20px 40px;
 
+.example__container {
+  padding-top: 25px;
+  padding-bottom: 40px;
 }
+
 .example__title {
   font-family: $secondary-font;
   font-size: 36px;
@@ -17,8 +19,8 @@
 }
 
 .example__text {
-margin: 0;
-margin-bottom: 20px;
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .example__list {
@@ -27,6 +29,7 @@ margin-bottom: 20px;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-bottom: 20px;
 }
 
 .example__item {
@@ -42,7 +45,6 @@ margin-bottom: 20px;
   text-transform: uppercase;
   text-align: center;
   color: #000000;
-
 }
 
 .example__stats-description {
@@ -58,13 +60,19 @@ margin-bottom: 20px;
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+  margin: 0;
+  margin-bottom: 20px;
 }
-
-
 
 @media (min-width: $tablet-width) {
+  .example {
+    // content: "";
+    // display: block;
+    border: 1px solid #eaeaea;
+    background-image: linear-gradient(to bottom, #ffffff 75%, #eaeaea 75%);
+  }
 
-}
-
-@media (min-width: $desktop-width) {
+  .example__text {
+    margin-bottom: 55px;
+  }
 }
