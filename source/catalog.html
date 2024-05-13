@@ -228,52 +228,64 @@
         </li>
       </ul>
     </section>
-    <section class="addition">
+    <section class="addition container">
       <h2 class="addition__title">Дополнительные товары</h2>
-      <div class="addition__wrapper">
-        <ul class="addition__list">
-          <li class="addition__item">
-            <a class="addition__link" href="#">
-              <h3 class="addition__name">Сахарозаменитель</h3>
-            </a>
-            <p class="addition__quantity">1 упаковка (100 г)</p>
-            <span class="addition__prise">200 ₽</span>
-            <a class="addition__button button" href="#">заказать</a>
-          </li>
-          <li class="addition__item">
-            <a class="addition__link" href="#">
-              <h3 class="addition__name">питьевая вода</h3>
-            </a>
-            <p class="addition__quantity">5 литров</p>
-            <span class="addition__prise">50 ₽</span>
-            <a class="addition__button button" href="#">заказать</a>
-          </li>
-          <li class="addition__item">
-            <a class="addition__link" href="#">
-              <h3 class="addition__name">молоко</h3>
-            </a>
-            <p class="addition__quantity">1 литр</p>
-            <span class="addition__prise">100 ₽</span>
-            <a class="addition__button button" href="#">заказать</a>
-          </li>
-          <li class="addition__item">
-            <a class="addition__link" href="#">
-              <h3 class="addition__name">витамины</h3>
-            </a>
-            <p class="addition__quantity">1 упаковка (30 г)</p>
-            <span class="addition__prise">300 ₽</span>
-            <a class="addition__button button" href="#">заказать</a>
-          </li>
-        </ul>
+      <div class="container__wrapper">
+        <div class="addition__wrapper">
+          <ul class="addition__list">
+            <li class="addition__item">
+              <a class="addition__link" href="#">
+                <h3 class="addition__name">Сахарозаменитель</h3>
+              </a>
+              <div class="addition__product">
+                <span class="addition__quantity">1 упаковка (100 г) </span>
+                <span class="addition__prise">200 ₽</span>
+              </div>
+              <a class="addition__button button" href="#">заказать</a>
+            </li>
+            <li class="addition__item">
+              <a class="addition__link" href="#">
+                <h3 class="addition__name">питьевая вода</h3>
+              </a>
+              <div class="addition__product">
+                <span class="addition__quantity">5 литров</span>
+                <span class="addition__prise">50 ₽</span>
+              </div>
+
+              <a class="addition__button button" href="#">заказать</a>
+            </li>
+            <li class="addition__item">
+              <a class="addition__link" href="#">
+                <h3 class="addition__name">молоко</h3>
+              </a>
+              <div class="addition__product">
+                <span class="addition__quantity">1 литр </span>
+                <span class="addition__prise">100 ₽</span>
+              </div>
+              <a class="addition__button button" href="#">заказать</a>
+            </li>
+            <li class="addition__item">
+              <a class="addition__link" href="#">
+                <h3 class="addition__name">витамины</h3>
+              </a>
+              <div class="addition__product">
+                <span class="addition__quantity">1 упаковка (30 г) </span>
+                <span class="addition__prise">300 ₽</span>
+              </div>
+              <a class="addition__button button" href="#">заказать</a>
+            </li>
+          </ul>
+        </div>
+        <div class="present">
+          <span class="visually-hidden">Кот в чехле</span>
+          <p class="present__condition">Закажите все
+            и получите чехол для
+            кота в подарок!</p>
+        </div>
       </div>
-      <div class="present">
-        <span class="visually-hidden">Кот в чехле</span>
-        <p class="present__condition">Закажите все
-          и получите чехол для
-          кота в подарок!</p>
-      </div>
+
     </section>
-    <section class="subscribe">
+    <section class="subscribe container">
       <h2 class="subscribe__title">Акции и новинки</h2>
       <p class="subscribe__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
       <form class="subscribe__form" action="https://echo.htmlacademy.ru/" method="post">
@@ -282,7 +294,7 @@
         <button class="subscribe__button button" type="submit">Подписаться</button>
       </form>
     </section>
-    <section class="contacts">
+    <section class="contacts container">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="container contacts__container">
         <p class="contacts__title">приглашаем к&nbspсотрудничеству дилеров!</p>

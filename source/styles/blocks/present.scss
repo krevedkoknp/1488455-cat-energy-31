@@ -1,6 +1,7 @@
 .present {
   background-color: $bg-basik-accent;
   background-image: url("../../images/background/present-background@1x.png");
+  background-repeat: no-repeat;
   width: 280px;
   height: 290px;
 }
@@ -21,4 +22,28 @@
   line-height: 20px;
   color: #ffffff;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .present {
+    background-color: $bg-basik-accent;
+    background-image: url("../../images/background/present-background-tablet@1x.png");
+    width: 707px;
+    height: 290px;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .present {
+    background-color: $bg-basik-accent;
+    background-image: url("../../images/background/present-background-desktop@1x.png");
+    width: 245;
+    height: 288;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+  }
 }
