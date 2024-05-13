@@ -1,9 +1,18 @@
-.subscribe__title {
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+  .subscribe__title {
   font-family: $secondary-font;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
   color: #000000;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
 }
 
 .subscribe__text {
@@ -11,17 +20,60 @@
   font-size: 16px;
   line-height: 24px;
   color: #000000;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+  text-align: center;
+
+}
+
+.subscribe__form {
+display: flex;
+flex-direction: column;
+margin: 0;
+padding: 0;
+border: none;
 }
 
 .subscribe__field {
+  display: block;
   font-family: $secondary-font;
   font-size: 20px;
-  line-height: auto;
+  line-height: 30px;
   text-transform: uppercase;
+  margin-bottom: 16px;
+  border: 1px solid #cdcdcd;
+  padding: 13px;
+
 }
 
 .subscribe__button {
+  display: block;
   font-size: 20px;
   line-height: 26px;
+  border: none;
+  box-sizing: border-box;
 }
 
+@media (min-width: $tablet-width) {
+  .subscribe__form {
+    display: flex;
+    flex-direction: row;
+}
+.subscribe__title {
+  font-size: 32px;
+  line-height: 32px;
+  margin-bottom: 66px;
+}
+
+.subscribe__text {
+  font-size: 24px;
+  line-height: 32px;
+  width: 632px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+.subscribe__field {
+  width: 376px;
+}
+}

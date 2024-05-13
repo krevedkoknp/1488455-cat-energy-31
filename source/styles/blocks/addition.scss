@@ -1,13 +1,30 @@
+.addition__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.addition__item {
+  margin-bottom: 15px;
+}
+
 .addition__title {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: #000000;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 49px;
 }
 
 .addition__link {
   text-decoration: none;
+  display: block;
+  margin-bottom: 13px;
 }
 
 .addition__name {
@@ -17,12 +34,110 @@
   font-weight: 400;
   color: #222222;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
-.addition__quantity {
-  line-height: 14px;
+.addition__product {
+margin-bottom: 15px;
+line-height: 14px;
+display: flex;
+justify-content: space-between;
 }
 
-.addition__prise {
-  line-height: 14px;
+.addition__button {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .addition__title {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 80px;
+  }
+
+  .addition__list {
+    border: 1px solid #d9d9d9;
+  }
+
+  .addition__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 26px 38px 28px;
+    height: 139px;
+    align-items: center;
+    margin: 0;
+    row-gap: 25px;
+  }
+
+  .addition__link {
+    margin: 0;
+  }
+
+.addition__name {
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.addition__product {
+  font-size: 16px;
+  line-height: 20px;
+  justify-content: end;
+  gap: 50px;
+  margin: 0;
+  align-content: center;
+  }
+
+  .addition__button {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .addition__list {
+  border: none;
+  }
+    .addition__title {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 80px;
+  }
+
+  .container__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    gap: 80px;
+  }
+
+  .addition__item {
+    display: grid;
+    grid-template-columns: 1fr 285px 244;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 15px 0;
+    height: 72px;
+    gap: 40px;
+    // row-gap: 25px;
+  }
+
+  .addition__item:first-child {
+    border-top: 1px solid #d9d9d9;
+    padding: 15px 0;
+
+  }
+
+  .addition__link {
+    margin: 0;
+  }
+
+  .addition__product {
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    align-content: center;
+  }
+
+  .addition__button {
+    grid-column: -1 /-2;
+  }
 }
