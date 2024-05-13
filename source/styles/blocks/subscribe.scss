@@ -51,14 +51,14 @@
   font-size: 20px;
   line-height: 26px;
   border: none;
-  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
   .subscribe__form {
-    display: flex;
     flex-direction: row;
-  }
+    width: 632px;
+margin: 0 auto;
+}
 
   .subscribe__title {
     font-size: 32px;
@@ -75,6 +75,28 @@
   }
 
   .subscribe__field {
+    display: block;
+    margin: 0;
     width: 376px;
+  }
+
+  .subscribe__button {
+  width: 100%;
+}
+}
+
+@media (min-width: $desktop-width) {
+  .subscribe {
+padding-top: 96px;
+padding-bottom: 104px;
+  }
+  .subscribe__title {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 72px;
+  }
+
+  .subscribe__text {
+    width: 100%;
   }
 }
