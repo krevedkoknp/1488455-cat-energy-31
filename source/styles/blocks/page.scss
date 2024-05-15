@@ -3,3 +3,40 @@
   min-width: 280px;
   position: relative;
 }
+
+@media (min-width: $desktop-width) {
+  .page {
+    width: 100%;
+  }
+
+  .page__body::before {
+    content: "";
+    display: block;
+    width: 720px;
+    height: 694px;
+    background-color: #ffffff;
+    background-image: url("../../images/background/hero-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    object-fit: contain;
+    // background-size: 100%;
+    // background-position: right;
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    z-index: 1;
+  }
+
+  .page__body::after {
+    content: "";
+    display: block;
+    width: 720px;
+    height: 694px;
+    background-color: rgba(104, 183, 56, 0.85);
+    position: absolute;
+    top: -11px;
+    left: auto;
+    right: 0;
+    z-index: 1;
+  }
+}
