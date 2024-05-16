@@ -31,7 +31,7 @@
     z-index: 1;
   }
 
-.page__body--index::after {
+  .page__body--index::after {
     content: "";
     display: block;
     width: calc(100% - 50%);

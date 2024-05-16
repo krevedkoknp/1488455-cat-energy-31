@@ -5,26 +5,10 @@
   color: #000000;
   text-transform: uppercase;
   text-align: center;
-}
-
-.navigation__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 65px;
-  padding: 0 20px;
-}
-
-.navigation__logo {
-  display: flex;
-  height: 38px;
-  width: 190px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.navigation__logo-text {
-  margin-left: 56px;
+  width: auto;
+  position: relative;
+  // top: 0;
+  // right: 0;
 }
 
 .navigation__list {
@@ -49,17 +33,17 @@
 }
 
 .navigation__toogle {
+  position: absolute;
+  display: block;
+  color: $base-color-title;
+  border: none;
+  cursor: pointer;
   width: 24px;
   height: 24px;
-  color: $base-color-title;
-  background-color: $bg-basik;
-  background-image: url("../../icons/stack.svg#burger-menu");
-  background-size: 24px 24px;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: none;
-  margin-left: auto;
-  cursor: pointer;
+  top: -44px;
+right: 0;
+margin: 0;
+padding: 0;
 
   &:hover,
   &:active {
@@ -67,12 +51,50 @@
   }
 }
 
-.navigation__toogle--closed {
-  background-image: url("../../icons/stack.svg#close-button");
+.navigation--closed .navigation__toogle::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/stack.svg#burger-menu");
+  background-size: 24px 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  right: 0;
 }
 
-.navigation__list--closed {
+.navigation--closed .navigation__toogle:active::before {
+opacity: 0.5;
+}
 
+.navigation--nojs .navigation__toogle {
+  display: none;
+}
+
+.navigation--opened .navigation__toogle::before {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/stack.svg#close-button");
+  background-size: 24px 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  right: 0;
+}
+
+.navigation--opened .navigation__opened:active::before {
+  opacity: 0.5;
+}
+
+@media (max-width: $mobile-width-only) {
+  .navigation--closed .navigation__list {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -92,7 +114,7 @@
     padding: 0;
   }
 
-  .navigation__logo {
+  .main-header__logo {
     width: 174px;
     height: 50px;
   }
@@ -134,7 +156,7 @@
     margin-bottom: 110px;
   }
 
-  .navigation__logo {
+  .main-header__logo {
     width: 202px;
     height: 59px;
   }
@@ -161,5 +183,4 @@
     color: #ffffff;
   }
 }
-
 
