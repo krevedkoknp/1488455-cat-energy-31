@@ -59,10 +59,20 @@
   background-repeat: no-repeat;
   border: none;
   margin-left: auto;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    opacity: 0.5;
+  }
 }
 
-.navigation__toogle--close {
+.navigation__toogle--closed {
   background-image: url("../../icons/stack.svg#close-button");
+}
+
+.navigation__list--closed {
+
 }
 
 @media (min-width: $tablet-width) {
