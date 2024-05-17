@@ -15,6 +15,8 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+  background-color: #ffffff;
+
 }
 
 .navigation__item::before {
@@ -32,69 +34,73 @@
   text-align: center;
 }
 
-.navigation__toogle {
-  position: absolute;
-  display: block;
-  color: $base-color-title;
-  border: none;
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
-  top: -44px;
-right: 0;
-margin: 0;
-padding: 0;
-
-  &:hover,
-  &:active {
-    opacity: 0.5;
-  }
-}
-
-.navigation--closed .navigation__toogle::before {
-  content: "";
-  position: absolute;
-  background-image: url("../../icons/stack.svg#burger-menu");
-  background-size: 24px 24px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #ffffff;
-  width: 24px;
-  height: 24px;
-  top: 0;
-  right: 0;
-}
-
-.navigation--closed .navigation__toogle:active::before {
-opacity: 0.5;
-}
-
-.navigation--nojs .navigation__toogle {
-  display: none;
-}
-
-.navigation--opened .navigation__toogle::before {
-  content: "";
-  position: absolute;
-  background-image: url("../../icons/stack.svg#close-button");
-  background-size: 24px 24px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: #ffffff;
-  width: 24px;
-  height: 24px;
-  top: 0;
-  right: 0;
-}
-
-.navigation--opened .navigation__opened:active::before {
-  opacity: 0.5;
-}
 
 @media (max-width: $mobile-width-only) {
+  .navigation__toggle {
+    position: absolute;
+    display: block;
+    color: $base-color-title;
+    border: none;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    top: -44px;
+    right: 0;
+    margin: 0;
+    padding: 0;
+
+    &:hover,
+    &:active {
+      opacity: 0.5;
+    }
+  }
+
+  .navigation--closed .navigation__toggle::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/stack.svg#burger-menu");
+    background-size: 24px 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    right: 0;
+  }
+
+  .navigation--closed .navigation__toggle:active::before {
+    opacity: 0.5;
+  }
+
+  .navigation--opened .navigation__toggle::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../icons/stack.svg#close-button");
+    background-size: 24px 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ffffff;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    right: 0;
+  }
+
+  .navigation--opened .navigation__opened:active::before {
+    opacity: 0.5;
+  }
+
   .navigation--closed .navigation__list {
     display: none;
   }
+
+  .navigation--opened .navigation__list {
+    position: absolute;
+    top: 0;
+    left: -20px;
+	width: calc(100% + 40px);
+}
 }
 
 @media (min-width: $tablet-width) {
@@ -103,24 +109,11 @@ opacity: 0.5;
     line-height: 24px;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
-    width: 704px;
-    padding-top: 20px;
-    margin-bottom: 65px;
-  }
+    }
 
   .navigation__wrapper {
     margin: 0;
     padding: 0;
-  }
-
-  .main-header__logo {
-    width: 174px;
-    height: 50px;
-  }
-
-  .navigation__logo-text {
-    margin: 0;
   }
 
   .navigation__list {
@@ -135,10 +128,10 @@ opacity: 0.5;
   }
 
   .navigation__link {
-    padding: 14px 16px;
+    padding: 13px 16px;
   }
 
-  .navigation__toogle {
+  .navigation__toggle {
     display: none;
   }
 }
@@ -147,23 +140,10 @@ opacity: 0.5;
   .navigation {
     font-size: 20px;
     line-height: 30px;
-    color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 1220px;
+    color: #000000;
     padding-top: 55px;
     margin-bottom: 110px;
-  }
-
-  .main-header__logo {
-    width: 202px;
-    height: 59px;
-  }
-
-  .navigation__logo-text {
-    margin: 0;
-    width: 118px;
+    z-index: 2;
   }
 
   .navigation__list {
@@ -171,11 +151,15 @@ opacity: 0.5;
     flex-wrap: wrap;
     width: 507px;
     z-index: 2;
+    background-color: transparent;
+
   }
 
   .navigation__link {
     padding: 14px 16px;
     color: #000000;
+    z-index: 7;
+
   }
 
   .navigation__link--index {
