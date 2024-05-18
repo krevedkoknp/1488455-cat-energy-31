@@ -33,6 +33,14 @@
   background-size: cover;
   padding: 0;
   margin: 0 auto;
+
+}
+
+.contacts__map iframe {
+  border: none;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: $tablet-width) {
@@ -78,5 +86,7 @@
 
   .contacts__map {
     background-image: url("../../images/background/map-background-desktop@1x.png");
+    width: 100%;
+
   }
 }
