@@ -52,14 +52,15 @@ min-height: 0;
 
 @media (min-width: $desktop-width) {
   .main-header {
-    margin-top: 25px;
-    margin-bottom: 65px;
+    margin: 0;
     padding: 0 110px;
   }
 
   .main-header__container {
     display: flex;
     justify-content: space-between;
+    margin-top: 56px;
+    margin-bottom: 109px;
   }
 
   .main-header__logo {
