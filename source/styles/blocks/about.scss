@@ -66,7 +66,7 @@
 
   .about__list {
     display: grid;
-    grid-template-columns: repeat(auto-fill,240px);
+    grid-template-columns: repeat(auto-fill, 240px);
     grid-template-rows: 280px;
     counter-reset: section;
     gap: 37px 153px;
@@ -96,7 +96,6 @@
 
 
   .about__item::after {
-    content: "";
     counter-increment: section;
     content: counter(section);
     font-family: $secondary-font;
@@ -114,9 +113,8 @@
 @media (min-width: $desktop-width) {
   .about__list {
     padding: 0;
-    grid-template-columns: repeat(auto-fill,240px);
+    grid-template-columns: repeat(auto-fill, 240px);
     gap: 37px 70px;
     justify-content: space-between;
-
   }
 }
