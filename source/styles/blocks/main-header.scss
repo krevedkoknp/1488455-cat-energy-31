@@ -1,5 +1,4 @@
 .main-header {
-
 }
 
 .main-header__container {
@@ -33,6 +32,7 @@
   margin-top: 25px;
 margin-bottom: 65px;
 min-height: 0;
+
 }
 
   .main-header__logo {
@@ -52,7 +52,7 @@ min-height: 0;
 
 @media (min-width: $desktop-width) {
   .main-header {
-    margin: 0;
+    margin: 0 auto;
     padding: 0 110px;
   }
 
@@ -61,6 +61,7 @@ min-height: 0;
     justify-content: space-between;
     margin-top: 56px;
     margin-bottom: 109px;
+    width: 1220px;
   }
 
   .main-header__logo {
