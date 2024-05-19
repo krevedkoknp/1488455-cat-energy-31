@@ -1,4 +1,39 @@
 .data {
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 20px;
+}
+
+.data__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 12px;
+  line-height: 16px;
+  position: relative;
+}
+
+.data__value {
+  text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+
+  .data__wrapper::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #cdcdcd;
+    width: 100%;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
 }

@@ -9,6 +9,8 @@
   line-height: 36px;
   font-weight: 400;
   color: #000000;
+  margin: 0;
+  margin-bottom: 41px;
 }
 
 .product__list {
@@ -23,13 +25,43 @@
   grid-template-columns: auto 140px;
   padding-top: 20px;
   padding-bottom: 25px;
+  position: relative;
+  row-gap: 17px;
+}
+
+.product__item::before {
+  content: "";
+  border-top: 1px solid #ebebeb;
+  width: calc(100% + 40px);
+  position: absolute;
+  top: 0;
+  left: -20px;
+  z-index: -1;
+}
+
+.product__wrapper {
+  display: block;
 }
 
 .product__order {
   grid-column: span 2;
 }
 
-.product__link {
+.product__link--small {
+  // padding: 10px 36px;
+}
+
+.product__link--big {
+  // padding: 3px 28px;
+}
+
+.product__image {
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+.product__link-title {
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
@@ -39,7 +71,7 @@
   text-decoration: none;
 }
 
-.product__wrapper {
+.product__wrapper-characteristic {
   display: flex;
   flex-direction: column;
 }
@@ -49,8 +81,12 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   color: #222222;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 14px;
+  padding-right: 64px;
 }
 
 .product__text {
@@ -60,15 +96,39 @@
 }
 
 @media (min-width: $tablet-width) {
+  .product__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 84px;
+  }
+
   .product__list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, 324px);
+    grid-template-rows: 511px;
     gap: 60px;
+    padding: 0;
+    margin: 0;
   }
 
   .product__item {
     display: flex;
     flex-direction: column;
+    padding: 29px 31px 40px;
+    justify-content: end;
+    background-image: linear-gradient(#ffffff 30%, $bg-secondary 30%);
+  }
+
+  .product__name {
+    margin: 0;
+    padding: 0 55px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .product__wrapper-characteristic {
+    margin-bottom: 42px;
   }
 }
 
@@ -76,6 +136,14 @@
   .product__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 80px 63px;
+    gap: 63px 80px;
+  }
+
+  .product__name {
+    margin: 0;
+    padding: 0 20px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
   }
 }

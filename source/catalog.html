@@ -17,31 +17,31 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__container">
-      <nav class="navigation">
+      <a class="main-header__logo" href="index.html">
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" width="70" height="59" srcset="images/logo/logo-desktop.svg">
+          <source type="image/svg+xml" media="(min-width: 768px)" width="60" height="50" srcset="images/logo/logo-tablet.svg">
+          <img class="main-header__logo-image" src="images/logo/logo-mobile.svg" width="33" height="38" alt="Графический логотип компании Cat-energy">
+        </picture>
+        <img class="main-header__logo-text" src="images/logo/logo-text.svg" width="101" height="18" alt="Текстовый логотип компании Cat-energy">
+      </a>
+      <nav class="navigation navigation--opened navigation--nojs">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Переключить меню</span>
+        </button>
         <div class="navigation__wrapper">
-          <a class="navigation__logo" href="index.html">
-            <picture>
-              <source type="image/svg+xml" media="(min-width: 1440px)" width="70" height="59" srcset="images/logo/logo-desktop.svg">
-              <source type="image/svg+xml" media="(min-width: 768px)" width="60" height="50" srcset="images/logo/logo-tablet.svg">
-              <img class="navigation__logo-image" src="images/logo/logo-mobile.svg" width="33" height="38" alt="Графический логотип компании Cat-energy">
-            </picture>
-            <img class="navigation__logo-text" src="images/logo/logo-text.svg" width="101" height="18" alt="Текстовый логотип компании Cat-energy">
-          </a>
-          <button class="navigation__toogle navigation__toogle--close" type="button">
-            <span class="visually-hidden">Переключить меню</span>
-          </button>
+          <ul class="navigation__list navigation__list--closed">
+            <li class="navigation__item navigation__item--current">
+              <a class="navigation__link" href="index.html">Главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Подбор программы</a>
+            </li>
+          </ul>
         </div>
-        <ul class="navigation__list">
-          <li class="navigation__item navigation__item--current">
-            <a class="navigation__link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Подбор программы</a>
-          </li>
-        </ul>
       </nav>
     </div>
   </header>
@@ -51,173 +51,229 @@
       <h2 class="product__title">Каталог продукции</h2>
       <ul class="product__list">
         <li class="product__item">
-          <a class="product__link" href="#">
-            <picture>
-              <source type="image/png" media="(min-width: 1440px)" width="161" height="172" srcset="images/catalog-items/chiken-500-tablet-desktop@1x.png 1x, images/catalog-items/chiken-500-tablet-desktop@2x.png 2x">
-              <source type="image/png" media="(min-width: 768px)" width="161" height="172" srcset="images/catalog-items/chiken-500-tablet-desktop@1x.png 1x, images/catalog-items/chiken-500-tablet-desktop@2x.png 2x">
-              <img class="product__image" src="images/catalog-items/chiken-500-mobile@1x.png" srcset="images/catalog-items/chiken-500-mobile@2x.png 2x" width="68" height="86" alt="cat-energy со вкусом курицы, вес 500 грамм">
-            </picture>
-          </a>
           <div class="product__wrapper">
-            <a class="product__link" href="#">
+            <a class="product__link product__link--small" href="#">
+              <picture>
+                <source type="image/png" media="(min-width: 1440px)" width="161" height="172" srcset="images/catalog-items/chiken-500-tablet-desktop@1x.png 1x, images/catalog-items/chiken-500-tablet-desktop@2x.png 2x">
+                <source type="image/png" media="(min-width: 768px)" width="161" height="172" srcset="images/catalog-items/chiken-500-tablet-desktop@1x.png 1x, images/catalog-items/chiken-500-tablet-desktop@2x.png 2x">
+                <img class="product__image" src="images/catalog-items/chiken-500-mobile@1x.png" srcset="images/catalog-items/chiken-500-mobile@2x.png 2x" width="68" height="86" alt="cat-energy со вкусом курицы, вес 500 грамм">
+              </picture>
+            </a>
+          </div>
+          <div class="product__wrapper-characteristic">
+            <a class="product__link-title" href="#">
               <h3 class="product__name">Cat Energy
                 PRO
                 500 г</h3>
             </a>
-            <dl class="data">
-              <dt class="data__characteristic">Масса</dt>
-              <dd class="data__value">500 г</dd>
-              <dt class="data__characteristic">Вкус</dt>
-              <dd class="data__value">Курица</dd>
-              <dt class="data__characteristic">Цена</dt>
-              <dd class="data__value">700 ₽</dd>
-            </dl>
+            <ul class="data">
+              <li class="data__wrapper">
+                <span class="data__characteristic">Масса</span>
+                <span class="data__value">500 г</span>
+              </li>
+              <li class="data__wrapper">
+                <span class="data__characteristic">Вкус</span>
+                <span class="data__value">Курица</span>
+              </li>
+              <li class="data__wrapper">
+                <span class="data__characteristic">Цена</span>
+                <span class="data__value">700 ₽</span>
+              </li>
+            </ul>
           </div>
           <a class="product__order button" href="#">Заказать</a>
         </li>
         <li class="product__item">
-          <a class="product__link" href="#">
-            <picture>
-              <source type="image/png" media="(min-width: 1440px)" width="172" height="196" srcset="images/catalog-items/chiken-1000-tablet-desktop@1x.png 1x, images/catalog-items/chiken-1000-tablet-desktop@2x.png 2x">
-              <source type="image/png" media="(min-width: 768px)" width="168" height="206" srcset="images/catalog-items/chiken-1000-tablet-desktop@1x.png 1x, images/catalog-items/chiken-1000-tablet-desktop@2x.png 2x">
-              <img class="product__image" src="images/catalog-items/chiken-1000-mobile@1x.png" srcset="images/catalog-items/chiken-1000-mobile@2x.png 2x" width="84" height="100" alt="cat-energy со вкусом курицы, вес 1000 грамм">
-            </picture>
-          </a>
           <div class="product__wrapper">
-            <a class="product__link" href="#">
+            <a class="product__link product__link--big" href="#">
+              <picture>
+                <source type="image/png" media="(min-width: 1440px)" width="172" height="196" srcset="images/catalog-items/chiken-1000-tablet-desktop@1x.png 1x, images/catalog-items/chiken-1000-tablet-desktop@2x.png 2x">
+                <source type="image/png" media="(min-width: 768px)" width="168" height="206" srcset="images/catalog-items/chiken-1000-tablet-desktop@1x.png 1x, images/catalog-items/chiken-1000-tablet-desktop@2x.png 2x">
+                <img class="product__image" src="images/catalog-items/chiken-1000-mobile@1x.png" srcset="images/catalog-items/chiken-1000-mobile@2x.png 2x" width="84" height="100" alt="cat-energy со вкусом курицы, вес 1000 грамм">
+              </picture>
+            </a>
+          </div>
+          <div class="product__wrapper-characteristic">
+            <a class="product__link-title" href="#">
               <h3 class="product__name">Cat Energy
                 PRO
                 1000 г</h3>
             </a>
-            <dl class="data">
-              <dt class="data__characteristic">Масса</dt>
-              <dd class="data__value">1000 г</dd>
-              <dt class="data__characteristic">Вкус</dt>
-              <dd class="data__value">Курица</dd>
-              <dt class="data__characteristic">Цена</dt>
-              <dd class="data__value">1000 ₽</dd>
-            </dl>
+            <ul class="data">
+              <li class="data__wrapper">
+                <span class="data__characteristic">Масса</span>
+                <span class="data__value">1000 г</span>
+              </li>
+              <li class="data__wrapper">
+                <span class="data__characteristic">Вкус</span>
+                <span class="data__value">Курица</span>
+              </li>
+              <li class="data__wrapper">
+                <span class="data__characteristic">Цена</span>
+                <span class="data__value">1000 ₽</span>
+              </li>
+            </ul>
           </div>
           <a class="product__order button" href="#">Заказать</a>
         </li>
         <li class="product__item">
-          <a class="product__link" href="#">
-            <picture>
-              <source type="image/png" media="(min-width: 1440px)" width="163" height="174" srcset="images/catalog-items/fish-500-tablet-desktop@1x.png 1x, images/catalog-items/fish-500-tablet-desktop@2x.png 2x">
-              <source type="image/png" media="(min-width: 768px)" width="163" height="174" srcset="images/catalog-items/fish-500-tablet-desktop@1x.png 1x, images/catalog-items/fish-500-tablet-desktop@2x.png 2x">
-              <img class="product__image" src="images/catalog-items/fish-500-mobile@1x.png" srcset="images/catalog-items/fish-500-mobile@2x.png 2x" width="68" height="86" alt="cat-energy со вкусом рыбы, вес 500 грамм">
-            </picture>
-          </a>
           <div class="product__wrapper">
-            <a class="product__link" href="#">
+            <a class="product__link product__link--small" href="#">
+              <picture>
+                <source type="image/png" media="(min-width: 1440px)" width="163" height="174" srcset="images/catalog-items/fish-500-tablet-desktop@1x.png 1x, images/catalog-items/fish-500-tablet-desktop@2x.png 2x">
+                <source type="image/png" media="(min-width: 768px)" width="163" height="174" srcset="images/catalog-items/fish-500-tablet-desktop@1x.png 1x, images/catalog-items/fish-500-tablet-desktop@2x.png 2x">
+                <img class="product__image" src="images/catalog-items/fish-500-mobile@1x.png" srcset="images/catalog-items/fish-500-mobile@2x.png 2x" width="68" height="86" alt="cat-energy со вкусом рыбы, вес 500 грамм">
+              </picture>
+            </a>
+          </div>
+          <div class="product__wrapper-characteristic">
+            <a class="product__link-title" href="#">
               <h3 class="product__name">Cat Energy
                 PRO
                 500 г</h3>
             </a>
-            <dl class="data">
-              <dt class="data__characteristic">Масса</dt>
-              <dd class="data__value">500 г</dd>
-              <dt class="data__characteristic">Вкус</dt>
-              <dd class="data__value">Рыба</dd>
-              <dt class="data__characteristic">Цена</dt>
-              <dd class="data__value">700 ₽</dd>
-            </dl>
+            <ul class="data">
+              <li class="data__wrapper">
+                <span class="data__characteristic">Масса</span>
+                <span class="data__value">500 г</span>
+              </li>
+              <li class="data__wrapper">
+                <span class="data__characteristic">Вкус</span>
+                <span class="data__value">Рыба</span>
+              </li>
+              <li class="data__wrapper">
+                <span class="data__characteristic">Цена</span>
+                <span class="data__value">700 ₽</span>
+              </li>
+            </ul>
           </div>
           <a class="product__order button" href="#">Заказать</a>
         </li>
         <li class="product__item">
-          <a class="product__link" href="#">
-            <picture>
-              <source type="image/png" media="(min-width: 1440px)" width="172" height="196" srcset="images/catalog-items/fish-1000-tablet-desktop@1x.png 1x, images/catalog-items/fish-1000-tablet-desktop@2x.png 2x">
-              <source type="image/png" media="(min-width: 768px)" width="168" height="200" srcset="images/catalog-items/fish-1000-tablet-desktop@1x.png 1x, images/catalog-items/fish-1000-tablet-desktop@2x.png 2x">
-              <img class="product__image" src="images/catalog-items/fish-1000-mobile@1x.png" srcset="images/catalog-items/fish-1000-mobile@2x.png 2x" width="84" height="100" alt="cat-energy со вкусом рыбы, вес 500 грамм">
-            </picture>
-          </a>
           <div class="product__wrapper">
-            <a class="product__link" href="#">
+            <a class="product__link product__link--big" href="#">
+              <picture>
+                <source type="image/png" media="(min-width: 1440px)" width="172" height="196" srcset="images/catalog-items/fish-1000-tablet-desktop@1x.png 1x, images/catalog-items/fish-1000-tablet-desktop@2x.png 2x">
+                <source type="image/png" media="(min-width: 768px)" width="168" height="200" srcset="images/catalog-items/fish-1000-tablet-desktop@1x.png 1x, images/catalog-items/fish-1000-tablet-desktop@2x.png 2x">
+                <img class="product__image" src="images/catalog-items/fish-1000-mobile@1x.png" srcset="images/catalog-items/fish-1000-mobile@2x.png 2x" width="84" height="100" alt="cat-energy со вкусом рыбы, вес 500 грамм">
+              </picture>
+            </a>
+          </div>
+          <div class="product__wrapper-characteristic">
+            <a class="product__link-title" href="#">
               <h3 class="product__name">Cat Energy
                 PRO
                 1000 г</h3>
             </a>
-            <dl class="data">
-              <dt class="data__characteristic">Масса</dt>
-              <dd class="data__value">1000 г</dd>
-              <dt class="data__characteristic">Вкус</dt>
-              <dd class="data__value">Рыба</dd>
-              <dt class="data__characteristic">Цена</dt>
-              <dd class="data__value">1000 ₽</dd>
-            </dl>
+            <ul class="data">
+              <li class="data__wrapper">
+                <span class="data__characteristic">Масса</span>
+                <span class="data__value">1000 г</span>
+              </li>
+              <li class="data__wrapper">
+                <span class="data__characteristic">Вкус</span>
+                <span class="data__value">Рыба</span>
+              </li>
+              <li class="data__wrapper">
+                <span class="data__characteristic">Цена</span>
+                <span class="data__value">1000 ₽</span>
+              </li>
+            </ul>
           </div>
           <a class="product__order button" href="#">Заказать</a>
         </li>
         <li class="product__item">
-          <a class="product__link" href="#">
-            <picture>
-              <source type="image/png" media="(min-width: 1440px)" width="161" height="171" srcset="images/catalog-items/buckwheat-500-tablet-desktop@1x.png 1x, images/catalog-items/buckwheat-500-tablet-desktop@2x.png 2x">
-              <source type="image/png" media="(min-width: 768px)" width="161" height="171" srcset="images/catalog-items/buckwheat-500-tablet-desktop@1x.png 1x, images/catalog-items/buckwheat-500-tablet-desktop@2x.png 2x">
-              <img class="product__image" src="images/catalog-items/buckwheat-500-mobile@1x.png" srcset="images/catalog-items/buckwheat-500-mobile@2x.png 2x" width="68" height="86" alt="cat-energy со вкусом гречки, вес 500 грамм">
-            </picture>
-          </a>
           <div class="product__wrapper">
-            <a class="product__link" href="#">
+            <a class="product__link product__link--small" href="#">
+              <picture>
+                <source type="image/png" media="(min-width: 1440px)" width="161" height="171" srcset="images/catalog-items/buckwheat-500-tablet-desktop@1x.png 1x, images/catalog-items/buckwheat-500-tablet-desktop@2x.png 2x">
+                <source type="image/png" media="(min-width: 768px)" width="161" height="171" srcset="images/catalog-items/buckwheat-500-tablet-desktop@1x.png 1x, images/catalog-items/buckwheat-500-tablet-desktop@2x.png 2x">
+                <img class="product__image" src="images/catalog-items/buckwheat-500-mobile@1x.png" srcset="images/catalog-items/buckwheat-500-mobile@2x.png 2x" width="68" height="86" alt="cat-energy со вкусом гречки, вес 500 грамм">
+              </picture>
+            </a>
+          </div>
+          <div class="product__wrapper-characteristic">
+            <a class="product__link-title" href="#">
               <h3 class="product__name">Cat Energy
                 slim
                 500 г</h3>
             </a>
-            <dl class="data">
-              <dt class="data__characteristic">Масса</dt>
-              <dd class="data__value">500 г</dd>
-              <dt class="data__characteristic">Вкус</dt>
-              <dd class="data__value">Гречка</dd>
-              <dt class="data__characteristic">Цена</dt>
-              <dd class="data__value">400 ₽</dd>
-            </dl>
+            <ul class="data">
+              <li class="data__wrapper">
+                <span class="data__characteristic">Масса</span>
+                <span class="data__value">500 г</span>
+              </li>
+              <li class="data__wrapper">
+                <span class="data__characteristic">Вкус</span>
+                <span class="data__value">Гречка</span>
+              </li>
+              <li class="data__wrapper">
+                <span class="data__characteristic">Цена</span>
+                <span class="data__value">400 ₽</span>
+              </li>
+            </ul>
           </div>
           <a class="product__order button" href="#">Заказать</a>
         </li>
         <li class="product__item">
-          <a class="product__link" href="#">
-            <picture>
-              <source type="image/png" media="(min-width: 1440px)" width="172" height="196" srcset="images/catalog-items/buckwheat-1000-tablet-desktop@1x.png 1x, images/catalog-items/buckwheat-1000-tablet-desktop@2x.png 2x">
-              <source type="image/png" media="(min-width: 768px)" width="186" height="200" srcset="images/catalog-items/buckwheat-1000-tablet-desktop@1x.png 1x, images/catalog-items/buckwheat-1000-tablet-desktop@2x.png 2x">
-              <img class="product__image" src="images/catalog-items/buckwheat-1000-mobile@1x.png" srcset="images/catalog-items/buckwheat-1000-mobile@2x.png 2x" width="84" height="100" alt="cat-energy со вкусом гречки, вес 1000 грамм">
-            </picture>
-          </a>
           <div class="product__wrapper">
-            <a class="product__link" href="#">
+            <a class="product__link product__link--big" href="#">
+              <picture>
+                <source type="image/png" media="(min-width: 1440px)" width="172" height="196" srcset="images/catalog-items/buckwheat-1000-tablet-desktop@1x.png 1x, images/catalog-items/buckwheat-1000-tablet-desktop@2x.png 2x">
+                <source type="image/png" media="(min-width: 768px)" width="186" height="200" srcset="images/catalog-items/buckwheat-1000-tablet-desktop@1x.png 1x, images/catalog-items/buckwheat-1000-tablet-desktop@2x.png 2x">
+                <img class="product__image" src="images/catalog-items/buckwheat-1000-mobile@1x.png" srcset="images/catalog-items/buckwheat-1000-mobile@2x.png 2x" width="84" height="100" alt="cat-energy со вкусом гречки, вес 1000 грамм">
+              </picture>
+            </a>
+          </div>
+          <div class="product__wrapper-characteristic">
+            <a class="product__link-title" href="#">
               <h3 class="product__name">Cat Energy slim 1000 г</h3>
             </a>
-            <dl class="data">
-              <dt class="data__characteristic">Масса</dt>
-              <dd class="data__value">1000 г</dd>
-              <dt class="data__characteristic">Вкус</dt>
-              <dd class="data__value">Гречка</dd>
-              <dt class="data__characteristic">Цена</dt>
-              <dd class="data__value">700 ₽</dd>
-            </dl>
+            <ul class="data">
+              <li class="data__wrapper">
+                <span class="data__characteristic">Масса</span>
+                <span class="data__value">1000 г</span>
+              </li>
+              <li class="data__wrapper">
+                <span class="data__characteristic">Вкус</span>
+                <span class="data__value">Гречка</span>
+              </li>
+              <li class="data__wrapper">
+                <span class="data__characteristic">Цена</span>
+                <span class="data__value">700 ₽</span>
+              </li>
+            </ul>
           </div>
           <a class="product__order button" href="#">Заказать</a>
         </li>
         <li class="product__item">
-          <a class="product__link" href="#">
-            <picture>
-              <source type="image/png" media="(min-width: 1440px)" width="163" height="174" srcset="images/catalog-items/rice-500-tablet-desktop@1x.png 1x, images/catalog-items/rice-500-tablet-desktop@2x.png 2x">
-              <source type="image/png" media="(min-width: 768px)" width="163" height="174" srcset="images/catalog-items/rice-500-tablet-desktop@1x.png 1x, images/catalog-items/rice-500-tablet-desktop@2x.png 2x">
-              <img class="product__image" src="images/catalog-items/rice-500-mobile@1x.png" srcset="images/catalog-items/rice-500-mobile@2x.png 2x" width="68" height="86" alt="cat-energy со вкусом риса, вес 500 грамм">
-            </picture>
-          </a>
           <div class="product__wrapper">
-            <a class="product__link" href="#">
+            <a class="product__link product__link--small" href="#">
+              <picture>
+                <source type="image/png" media="(min-width: 1440px)" width="163" height="174" srcset="images/catalog-items/rice-500-tablet-desktop@1x.png 1x, images/catalog-items/rice-500-tablet-desktop@2x.png 2x">
+                <source type="image/png" media="(min-width: 768px)" width="163" height="174" srcset="images/catalog-items/rice-500-tablet-desktop@1x.png 1x, images/catalog-items/rice-500-tablet-desktop@2x.png 2x">
+                <img class="product__image" src="images/catalog-items/rice-500-mobile@1x.png" srcset="images/catalog-items/rice-500-mobile@2x.png 2x" width="68" height="86" alt="cat-energy со вкусом риса, вес 500 грамм">
+              </picture>
+            </a>
+          </div>
+          <div class="product__wrapper-characteristic">
+            <a class="product__link-title" href="#">
               <h3 class="product__name">Cat Energy slim 500 г</h3>
             </a>
-            <dl class="data">
-              <dt class="data__characteristic">Масса</dt>
-              <dd class="data__value">500 г</dd>
-              <dt class="data__characteristic">Вкус</dt>
-              <dd class="data__value">Рис</dd>
-              <dt class="data__characteristic">Цена</dt>
-              <dd class="data__value">500 ₽</dd>
-            </dl>
+            <ul class="data">
+              <li class="data__wrapper">
+                <span class="data__characteristic">Масса</span>
+                <span class="data__value">500 г</span>
+              </li>
+              <li class="data__wrapper">
+                <span class="data__characteristic">Вкус</span>
+                <span class="data__value">Рис</span>
+              </li>
+              <li class="data__wrapper">
+                <span class="data__characteristic">Цена</span>
+                <span class="data__value">500 ₽</span>
+              </li>
+            </ul>
           </div>
           <a class="product__order button" href="#">Заказать</a>
         </li>
