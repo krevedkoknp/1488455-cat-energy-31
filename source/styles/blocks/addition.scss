@@ -21,21 +21,21 @@
   padding: 0;
   margin-bottom: 49px;
   width: fit-content;
-position: relative;
-background-color: #ffffff;
-box-shadow: -40px 0 0 0 #ffffff, 40px 0 0 0 #ffffff;
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: -40px 0 0 0 #ffffff, 40px 0 0 0 #ffffff;
 }
 
 .addition__title::before {
-content: "";
-position: absolute;
-background: $bg-basik-accent;
-height: 2px;
-width: 100vw;
-top: 50%;
-right: 0;
-box-shadow: 100vw 0 0 0 $bg-basik-accent;
-z-index: -1;
+  content: "";
+  position: absolute;
+  background: $bg-basik-accent;
+  height: 2px;
+  width: 100vw;
+  top: 50%;
+  right: 0;
+  box-shadow: 100vw 0 0 0 $bg-basik-accent;
+  z-index: -1;
 }
 
 
@@ -73,25 +73,25 @@ z-index: -1;
 }
 
 @media (max-width: $mobile-width-only) {
-.addition__item::before {
-  content: "";
-  border-top: 1px solid #ebebeb;
-  width: calc(100% + 40px);
-  position: absolute;
-  top: 0;
-  left: -20px;
-  z-index: -1;
-}
+  .addition__item::before {
+    content: "";
+    border-top: 1px solid #ebebeb;
+    width: calc(100% + 40px);
+    position: absolute;
+    top: 0;
+    left: -20px;
+    z-index: -1;
+  }
 
-.addition__item:last-child::before {
-  content: "";
-  border-bottom: 1px solid #ebebeb;
-  width: calc(100% + 40px);
-  position: absolute;
-  bottom: 0;
-  left: -20px;
-  z-index: -1;
-}
+  .addition__item:last-child::before {
+    content: "";
+    border-bottom: 1px solid #ebebeb;
+    width: calc(100% + 40px);
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    z-index: -1;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -101,7 +101,6 @@ z-index: -1;
     margin-bottom: 80px;
     padding-left: 40px;
     box-shadow: 40px 0 0 0 #ffffff;
-
   }
 
   .addition__list {
@@ -121,7 +120,8 @@ z-index: -1;
 
   .addition__link {
     margin: 0;
-padding: 0;  }
+    padding: 0;
+  }
 
   .addition__name {
     font-size: 20px;
@@ -155,8 +155,9 @@ padding: 0;  }
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 80px;
-    box-shadow: -40px 0 0 0 #ffffff, 40px 0 0 0 #ffffff ;
-
+    box-shadow:
+      -40px 0 0 0 #ffffff,
+      40px 0 0 0 #ffffff;
   }
 
   .container__wrapper {

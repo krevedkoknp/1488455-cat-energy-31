@@ -19,13 +19,13 @@
 }
 
 .navigation__item {
-position: relative;
+  position: relative;
 }
 
 .navigation__item::before {
   content: "";
   background-color: #d9d9d9;
-position: absolute;
+  position: absolute;
   height: 1px;
   width: 100%;
   bottom: 0;

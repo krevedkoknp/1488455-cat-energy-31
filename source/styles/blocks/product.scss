@@ -75,8 +75,8 @@
 }
 
 .product__wrapper-all {
-padding: 0 10px;
-padding-bottom: 21px;
+  padding: 0 10px;
+  padding-bottom: 21px;
 }
 
 .product__text {
@@ -86,7 +86,6 @@ padding-bottom: 21px;
   line-height: 16px;
   text-align: center;
   position: relative;
-
 }
 
 .product__wrapper-all .product__name {
@@ -102,28 +101,28 @@ padding-bottom: 21px;
 }
 
 .product__wrapper-all::before,
-.product__wrapper-all::after  {
-content: "";
-display: block;
-width: 30px;
-height: 1px;
-position: absolute;
-background-color: #d3d3d3;
-top: 40px;
-left: 50%;
-transform: translate(-50%);
+.product__wrapper-all::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 1px;
+  position: absolute;
+  background-color: #d3d3d3;
+  top: 40px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
-.product__wrapper-all::after  {
-transform: translate(-50%) rotate(-90deg);
+.product__wrapper-all::after {
+  transform: translate(-50%) rotate(-90deg);
 }
 
 .product__item--all {
-display: flex;
-flex-direction: column;
-justify-content: center;
-gap: 0;
-padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+  padding-top: 25px;
 }
 
 
@@ -187,10 +186,7 @@ padding-top: 25px;
   }
 
   .product__wrapper-all {
-    padding-top: 160px;
-    padding-right: 46px;
-    padding-left: 46px;
-    padding-bottom: 82px;
+    padding: 160px 46px 82px;
   }
 
   .product__text {
@@ -205,10 +201,10 @@ padding-top: 25px;
   }
 
   .product__wrapper-all::before,
-  .product__wrapper-all::after  {
-  width: 60px;
-  height: 1px;
-  top: 80px;
+  .product__wrapper-all::after {
+    width: 60px;
+    height: 1px;
+    top: 80px;
   }
 
   .product__item--all {
@@ -218,7 +214,6 @@ padding-top: 25px;
     height: 429px;
     align-self: end;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -237,10 +232,7 @@ padding-top: 25px;
   }
 
   .product__wrapper-all {
-    padding-top: 50px;
-    padding-right: 5px;
-    padding-left: 5px;
-    padding-bottom: 90px;
+    padding: 50px 5px 90px;
   }
 
   .product__text {

@@ -28,12 +28,13 @@
 @media (min-width: $tablet-width) {
   .main-footer__container {
     display: flex;
-    justify-content: space-between;
+    place-content: center space-between;
     flex-direction: row;
   }
 
   .main-footer__link {
     width: 128px;
+    padding: 0;
   }
 
   .main-footer__link::after {
