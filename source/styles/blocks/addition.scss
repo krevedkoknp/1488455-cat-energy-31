@@ -8,6 +8,7 @@
 
 .addition__item {
   margin-bottom: 15px;
+  position: relative;
 }
 
 .addition__title {
@@ -24,7 +25,8 @@
 .addition__link {
   text-decoration: none;
   display: block;
-  margin-bottom: 13px;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 .addition__name {
@@ -47,6 +49,32 @@
 
 .addition__button {
   display: block;
+}
+
+.addition__wrapper {
+  margin-bottom: 35px;
+}
+
+@media (max-width: $mobile-width-only) {
+.addition__item::before {
+  content: "";
+  border-top: 1px solid #ebebeb;
+  width: calc(100% + 40px);
+  position: absolute;
+  top: 0;
+  left: -20px;
+  z-index: -1;
+}
+
+.addition__item:last-child::before {
+  content: "";
+  border-bottom: 1px solid #ebebeb;
+  width: calc(100% + 40px);
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  z-index: -1;
+}
 }
 
 @media (min-width: $tablet-width) {
@@ -73,7 +101,7 @@
 
   .addition__link {
     margin: 0;
-  }
+padding: 0;  }
 
   .addition__name {
     font-size: 20px;
@@ -90,6 +118,10 @@
 
   .addition__button {
     grid-column: 1 / -1;
+  }
+
+  .addition__wrapper {
+    margin-bottom: 70px;
   }
 }
 

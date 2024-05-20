@@ -69,7 +69,6 @@
   }
 
   .present__condition {
-    font-size: 18px;
     text-align: left;
     top: 50%;
     right: 125px;
@@ -88,4 +87,31 @@
     margin: 0;
     padding: 0;
   }
+
+  .present::after {
+    content: "";
+    display: block;
+    height: 78px;
+    width: 80px;
+    background-color: #ffffff;
+    mask-image: url("../../icons/present-icon.svg");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    position: absolute;
+    top: 58px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .present__condition {
+    margin: 0;
+    display: block;
+    position: absolute;
+    min-width: 161px;
+    text-align: center;
+    bottom: 43px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
 }
