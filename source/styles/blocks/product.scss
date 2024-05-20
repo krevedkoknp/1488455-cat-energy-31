@@ -41,6 +41,7 @@
 
 .product__wrapper {
   display: block;
+  align-self: center;
 }
 
 .product__order {
@@ -74,6 +75,7 @@
 .product__wrapper-characteristic {
   display: flex;
   flex-direction: column;
+  margin-bottom: 5px;
 }
 
 .product__name {
