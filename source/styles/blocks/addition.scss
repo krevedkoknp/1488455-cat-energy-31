@@ -29,10 +29,15 @@ margin-bottom: 35px;
   margin: 0;
   padding: 0;
   margin-bottom: 49px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 49px;
 }
 
 .addition__link {
   text-decoration: none;
+  display: block;
+  margin-bottom: 13px;
   display: block;
   margin-bottom: 13px;
 }
@@ -46,11 +51,17 @@ margin-bottom: 35px;
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .addition__product {
   margin-bottom: 15px;
+.addition__product {
+  margin-bottom: 15px;
   line-height: 14px;
+  display: flex;
+  justify-content: space-between;
   display: flex;
   justify-content: space-between;
 }

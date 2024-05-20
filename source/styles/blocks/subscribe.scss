@@ -5,6 +5,13 @@
   padding-bottom: 40px;
 }
 
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .subscribe__title {
   font-family: $secondary-font;
   font-size: 24px;
@@ -87,6 +94,10 @@
 
 @media (min-width: $desktop-width) {
   .subscribe {
+<<<<<<< HEAD
+=======
+    padding-top: 96px;
+>>>>>>> origin/master
     padding-bottom: 104px;
   }
 
