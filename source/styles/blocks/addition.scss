@@ -1,3 +1,7 @@
+.addition__wrapper {
+margin-bottom: 35px;
+}
+
 .addition__list {
   margin: 0;
   padding: 0;
@@ -8,6 +12,12 @@
 
 .addition__item {
   margin-bottom: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.addition__item:first-child {
+  border-top: 1px solid #d9d9d9;
 }
 
 .addition__title {
@@ -19,10 +29,15 @@
   margin: 0;
   padding: 0;
   margin-bottom: 49px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 49px;
 }
 
 .addition__link {
   text-decoration: none;
+  display: block;
+  margin-bottom: 13px;
   display: block;
   margin-bottom: 13px;
 }
@@ -36,11 +51,17 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .addition__product {
   margin-bottom: 15px;
+.addition__product {
+  margin-bottom: 15px;
   line-height: 14px;
+  display: flex;
+  justify-content: space-between;
   display: flex;
   justify-content: space-between;
 }
@@ -50,6 +71,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .addition__wrapper {
+    margin-bottom: 74px;
+    }
+
   .addition__title {
     font-size: 32px;
     line-height: 32px;
@@ -94,6 +119,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .addition__wrapper {
+    margin-bottom: 96px;
+    }
+
   .addition__list {
     border: none;
   }
