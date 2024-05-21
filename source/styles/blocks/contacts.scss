@@ -1,4 +1,4 @@
-.contacts__container-inner {
+.contacts__container--inner {
   background-color: $bg-secondary;
 }
 
@@ -75,6 +75,10 @@
 @media (min-width: $desktop-width) {
   .contacts__container {
 position: relative;
+  }
+
+  .contacts__container--inner {
+    background-color: #ffffff;
   }
 
   .contacts__container-wrapper {
