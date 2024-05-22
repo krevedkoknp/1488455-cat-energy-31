@@ -11,7 +11,7 @@
 
 .main-footer__link {
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 37px;
   position: relative;
   display: block;
 }
@@ -23,6 +23,11 @@
   position: absolute;
   bottom: 20px;
   left: 0;
+}
+
+.main-footer__logo-text {
+width: 128px;
+height: 24px;
 }
 
 @media (min-width: $tablet-width) {

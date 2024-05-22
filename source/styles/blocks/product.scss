@@ -24,6 +24,7 @@
 .product__item {
   display: grid;
   grid-template-columns: auto 140px;
+  grid-template-rows: 1fr 40px;
   padding-top: 20px;
   padding-bottom: 25px;
   position: relative;
@@ -95,8 +96,8 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  padding-top: 53px;
-  padding-bottom: 5px;
+  padding-top: 54px;
+  padding-bottom: 9px;
   text-align: center;
 }
 
