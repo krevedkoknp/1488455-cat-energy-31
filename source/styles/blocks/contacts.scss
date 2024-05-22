@@ -47,7 +47,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .contacts__container-wrapper {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -74,7 +73,7 @@
 
 @media (min-width: $desktop-width) {
   .contacts__container {
-position: relative;
+    position: relative;
   }
 
   .contacts__container--inner {
