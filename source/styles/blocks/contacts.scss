@@ -1,4 +1,8 @@
-.contacts__container {
+.contacts__container--inner {
+  background-color: $bg-secondary;
+}
+
+.contacts__container-wrapper {
   display: grid;
   grid-template-columns: 140px 140px;
   padding-top: 26px;
@@ -43,7 +47,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .contacts__container {
+  .contacts__container-wrapper {
     padding-top: 60px;
     padding-bottom: 60px;
     grid-template-columns: 163px 163px;
@@ -68,11 +72,15 @@
 }
 
 @media (min-width: $desktop-width) {
-  .contacts {
+  .contacts__container {
     position: relative;
   }
 
-  .contacts__container {
+  .contacts__container--inner {
+    background-color: #ffffff;
+  }
+
+  .contacts__container-wrapper {
     width: 565px;
     height: 199px;
     background-color: #ffffff;

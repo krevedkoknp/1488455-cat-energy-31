@@ -11,13 +11,13 @@
 }
 
 .present::before {
-background-color: rgba(104, 183, 56, 0.85) ;
-content: "";
-width: 100%;
-height: 290px;
-position: absolute;
-top: 0;
-left: 0;
+  background-color: rgba(104, 183, 56, 0.85);
+  content: "";
+  width: 100%;
+  height: 290px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .present::after {
@@ -62,21 +62,19 @@ left: 0;
 
   .present::after {
     height: 80px;
-  width: 82px;
+    width: 82px;
     top: 50%;
     left: 77px;
     transform: translateY(-50%);
   }
 
   .present__condition {
-    font-size: 18px;
     text-align: left;
     top: 50%;
     right: 125px;
     transform: translateY(-50%);
     width: 161px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -88,5 +86,31 @@ left: 0;
     background-position: center;
     margin: 0;
     padding: 0;
+  }
+
+  .present::after {
+    content: "";
+    display: block;
+    height: 78px;
+    width: 80px;
+    background-color: #ffffff;
+    mask-image: url("../../icons/present-icon.svg");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    position: absolute;
+    top: 58px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .present__condition {
+    margin: 0;
+    display: block;
+    position: absolute;
+    min-width: 161px;
+    text-align: center;
+    bottom: 43px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

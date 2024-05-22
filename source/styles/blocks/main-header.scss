@@ -7,6 +7,7 @@
   padding: 0 20px;
 }
 
+
 .main-header__container .navigation--closed {
   display: flex;
 }
@@ -19,6 +20,24 @@
   align-items: center;
   min-height: 66px;
 }
+
+@media (max-width: $mobile-width-only) {
+  .main-header__container--inner {
+    margin-bottom: 27px;
+  }
+
+  .main-header__container--inner::before {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #d9d9d9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+  }
+}
+
 
 @media (min-width: $tablet-width) {
   .main-header__container {

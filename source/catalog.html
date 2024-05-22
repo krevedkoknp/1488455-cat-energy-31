@@ -16,7 +16,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__container">
+    <div class="main-header__container main-header__container--inner">
       <a class="main-header__logo" href="index.html">
         <picture>
           <source type="image/svg+xml" media="(min-width: 1440px)" width="70" height="59" srcset="images/logo/logo-desktop.svg">
@@ -278,8 +278,10 @@
           <a class="product__order button" href="#">Заказать</a>
         </li>
         <li class="product__item product__item--all">
-          <h3 class="product__name">Показать еще 100500 товаров</h3>
-          <p class="product__text">На самом деле вкусов гораздо больше!</p>
+          <div class="product__wrapper-all">
+            <h3 class="product__name">Показать еще 100500 товаров</h3>
+            <p class="product__text">На самом деле вкусов гораздо больше!</p>
+          </div>
           <a class="button button--all" href="#">показать все</a>
         </li>
       </ul>
@@ -335,7 +337,7 @@
         <div class="present">
           <span class="visually-hidden">Кот в чехле</span>
           <p class="present__condition">Закажите все
-            и получите чехол для
+            и&nbsp;получите чехол для
             кота в подарок!</p>
         </div>
       </div>
@@ -352,11 +354,13 @@
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="container contacts__container">
-        <p class="contacts__title">приглашаем к&nbsp;сотрудничеству дилеров!</p>
-        <p class="contacts__text">ул. Большая
-          Конюшенная,&nbsp;д.&nbsp;19/8
-          Санкт-Петербург</p>
+      <div class="container contacts__container contacts__container--inner">
+        <div class="contacts__container-wrapper">
+          <p class="contacts__title">приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <p class="contacts__text">ул. Большая
+            Конюшенная,&nbsp;д.&nbsp;19/8
+            Санкт-Петербург</p>
+        </div>
       </div>
       <div class="contacts__map">
         <p class="visually-hidden">как до нас добраться</p>
