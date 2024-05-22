@@ -68,6 +68,7 @@
 
 @media (min-width: $tablet-width) {
   .hero {
+    margin: 0;
     background-color: #ffffff;
     position: relative;
     min-height: 810px;
@@ -97,7 +98,7 @@
     position: absolute;
     width: 709px;
     height: 609px;
-    top: 205px;
+    top: 201px;
     left: 30px;
   }
 

@@ -1,5 +1,6 @@
 .about {
   margin-bottom: 49px;
+  padding-top: 45px;
 }
 
 .about__title {
@@ -70,10 +71,10 @@
 
   .about__list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 240px);
+    grid-template-columns: repeat(auto-fill, 242px);
     grid-template-rows: 280px;
     counter-reset: section;
-    gap: 37px 153px;
+    gap: 37px 141px;
     margin-bottom: 47px;
   }
 
@@ -90,7 +91,8 @@
 
   .about__step {
     margin: 0;
-    padding-right: 10px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .about__item::before {
