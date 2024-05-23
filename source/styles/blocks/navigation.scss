@@ -124,8 +124,22 @@
   .navigation__list {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    width: 468px;
+  }
+
+  .navigation__item {
+    margin-left: 23px;
+    position: relative;
+  }
+
+  .navigation__item--current::after {
+content: "";
+position: absolute;
+width: 100%;
+height: 2px;
+background-color: $bg-basik-accent;
+bottom: 2px;
+left: 0;
+// доделать!!!!
   }
 
   .navigation__item::before {
@@ -133,7 +147,7 @@
   }
 
   .navigation__link {
-    padding: 13px 16px;
+    padding: 13px 5px;
   }
 
   .navigation__toggle {
@@ -150,19 +164,14 @@
   }
 
   .navigation__list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 507px;
     background-color: transparent;
   }
 
   .navigation__link {
-    padding: 14px 16px;
     color: #000000;
   }
 
   .navigation__link--index {
-    padding: 14px 16px;
     color: #ffffff;
   }
 }
