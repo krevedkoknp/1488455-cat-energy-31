@@ -15,7 +15,7 @@
   font-weight: 400;
   color: #000000;
   margin: 0;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .example__text {
@@ -67,6 +67,7 @@
   top: 46px;
   left: 49%;
   transform: translate(-50%);
+  color: #444444;
 }
 
 .example__total {
@@ -88,11 +89,20 @@
     background-image: linear-gradient(to bottom, #ffffff 75%, #eaeaea 75%);
   }
 
-  .example__list {
-    grid-template-columns: repeat(2, 162);
+  .example__container {
+  padding-top: 45px;
+  padding-bottom: 101px;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
   }
 
   .example__text {
+    font-size: 16px;
+    line-height: 24px;
     margin-bottom: 55px;
   }
 
@@ -102,11 +112,31 @@
     justify-content: space-between;
   }
 
+  .example__list {
+    grid-template-columns: repeat(2, 162px);
+    gap: 43px;
+  }
+
+  .example__stats {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__stats-description {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+    padding: 0;
+    top: 90%;
+    left: 25%;
+  }
+
   .example__total {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 28px;
     width: 180px;
     text-align: end;
-    align-self: center;
+    align-content: start;
+    padding-top: 8px;
   }
 }
