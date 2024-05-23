@@ -33,13 +33,17 @@ height: 24px;
 @media (min-width: $tablet-width) {
   .main-footer__container {
     display: flex;
-    place-content: center space-between;
+    align-content: center;
+    justify-content: space-between;
     flex-direction: row;
+    padding: 64px 30px;
   }
 
   .main-footer__link {
-    width: 128px;
+    width: 168px;
     padding: 0;
+    // align-self: center;
+    text-align: start;
   }
 
   .main-footer__link::after {

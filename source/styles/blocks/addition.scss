@@ -95,12 +95,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .addition {
+    margin-bottom: 79px;
+  }
+
   .addition__title {
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 80px;
     padding-left: 40px;
     box-shadow: 40px 0 0 0 #ffffff;
+  }
+
+  .addition__title::before {
+    top: 43%;
   }
 
   .addition__list {
@@ -110,12 +118,15 @@
   .addition__item {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-bottom: 1px solid #d9d9d9;
-    padding: 26px 38px 28px;
+    padding: 26px 37px 28px;
     height: 139px;
     align-items: center;
     margin: 0;
-    row-gap: 25px;
+    row-gap: 24px;
+  }
+  .addition__item:not(:last-child) {
+    border-bottom: 1px solid #d9d9d9;
+
   }
 
   .addition__link {
@@ -131,8 +142,10 @@
   .addition__product {
     font-size: 16px;
     line-height: 20px;
-    place-content: center end;
+    align-content: center;
+    justify-content: end;
     gap: 50px;
+    padding-right: 5px;
     margin: 0;
   }
 
