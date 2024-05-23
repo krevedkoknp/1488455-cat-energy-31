@@ -169,9 +169,23 @@
   .product__item {
     display: flex;
     flex-direction: column;
-    padding: 29px 31px 40px;
-    justify-content: end;
-    background-image: linear-gradient(#ffffff 10%, $bg-secondary 10%);
+    padding: 10px 37px 40px;
+    background-image: linear-gradient(#ffffff 16%, $bg-secondary 16%);
+    gap: 0;
+
+  }
+
+  .product__wrapper {
+    width: 200px;
+    height: 210px;
+    display: grid;
+    grid-template-rows: 210px;
+    margin-bottom: 22px;
+  }
+
+  .product__link {
+    display: block;
+    align-self: center;
   }
 
   .product__name {
@@ -183,11 +197,15 @@
   }
 
   .product__wrapper-characteristic {
-    margin-bottom: 42px;
+    margin-bottom: 37px;
+  }
+
+  .product__link-title {
+margin-bottom: 20px;
   }
 
   .product__wrapper-all {
-    padding: 160px 46px 82px;
+    padding: 150px 34px 82px;
   }
 
   .product__text {
@@ -198,6 +216,7 @@
   .product__wrapper-all .product__name {
     font-size: 20px;
     line-height: 24px;
+    // padding-top: 8px;
     padding-bottom: 23px;
   }
 

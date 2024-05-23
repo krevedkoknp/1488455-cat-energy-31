@@ -20,11 +20,14 @@
   .data {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
+
+  }
+
+  .data__wrapper {
     font-size: 16px;
     line-height: 20px;
   }
-
 
   .data__wrapper::after {
     content: "";
