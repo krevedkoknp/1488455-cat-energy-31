@@ -6,7 +6,7 @@
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 290px;
+  height: 287px;
   position: relative;
 }
 
@@ -16,21 +16,21 @@
   width: 100%;
   height: 290px;
   position: absolute;
-  top: 0;
+  top: -2px;
   left: 0;
 }
 
 .present::after {
   content: "";
   display: block;
-  height: 78px;
+  height: 80px;
   width: 80px;
   background-color: #ffffff;
   mask-image: url("../../icons/present-icon.svg");
   mask-position: center;
   mask-repeat: no-repeat;
   position: absolute;
-  top: 58px;
+  top: 57px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -54,24 +54,29 @@
     background-color: $bg-basik-accent;
     background-image: url("../../images/background/present-background-tablet@1x.png");
     width: 100%;
-    height: 290px;
+    height: 200px;
     background-position: center;
     margin: 0;
     padding: 0;
   }
 
+  .present::before {
+    height: 202px;
+  }
+
   .present::after {
-    height: 80px;
+    height: 83px;
     width: 82px;
-    top: 50%;
+    top: 48%;
     left: 77px;
     transform: translateY(-50%);
   }
 
   .present__condition {
     text-align: left;
-    top: 50%;
+    top: 49%;
     right: 125px;
+    left: auto;
     transform: translateY(-50%);
     width: 161px;
   }

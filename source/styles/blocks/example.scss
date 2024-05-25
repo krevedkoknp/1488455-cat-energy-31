@@ -2,10 +2,8 @@
   background-color: #eaeaea;
 }
 
-
 .example__container {
   padding-top: 25px;
-  padding-bottom: 40px;
 }
 
 .example__title {
@@ -15,7 +13,7 @@
   font-weight: 400;
   color: #000000;
   margin: 0;
-  padding-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .example__text {
@@ -64,9 +62,10 @@
   position: absolute;
   padding-right: 8px;
   padding-left: 8px;
-  top: 48px;
-  left: 50%;
+  top: 46px;
+  left: 49%;
   transform: translate(-50%);
+  color: #444444;
 }
 
 .example__total {
@@ -85,14 +84,22 @@
     // content: "";
     // display: block;
     border: 1px solid #eaeaea;
-    background-image: linear-gradient(to bottom, #ffffff 75%, #eaeaea 75%);
+    background-image: linear-gradient(to bottom, #ffffff 63%, #eaeaea 63%);
   }
 
-  .example__list {
-    grid-template-columns: repeat(2, 162);
+  .example__container {
+    padding-top: 45px;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
   }
 
   .example__text {
+    font-size: 16px;
+    line-height: 24px;
     margin-bottom: 55px;
   }
 
@@ -100,13 +107,61 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    margin-bottom: 74px;
+  }
+
+  .example__list {
+    grid-template-columns: repeat(2, 162px);
+    gap: 43px;
+  }
+
+  .example__stats {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__stats-description {
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+    padding: 0;
+    top: 90%;
+    left: 25%;
   }
 
   .example__total {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 28px;
     width: 180px;
     text-align: end;
-    align-self: center;
+    align-content: start;
+    padding-top: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    display: grid;
+    grid-template-columns: auto auto;
+    border-top: none;
+    background-image: linear-gradient(to bottom, #ffffff 63%, #eaeaea 63%);
+    // justify-content: space-between;
+  }
+
+  .example__container {
+    padding-top: 22px;
+  }
+
+  .example__title {
+    margin-bottom: 146px;
+  }
+
+  .example__text {
+    padding-right: 43px;
+    margin-bottom: 69px;
+  }
+
+  .example__container-wrapper {
+    flex-direction: column;
   }
 }

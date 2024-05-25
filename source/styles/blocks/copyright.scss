@@ -4,13 +4,15 @@
   color: #444444;
   position: relative;
   align-items: baseline;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .copyright::after {
   content: "";
   display: block;
-  height: 27px;
-  width: 34px;
+  height: 34px;
+  width: 27px;
   background-color: #666666;
   mask-image: url("../../icons/html-academy-logo.svg");
   mask-position: center;
@@ -19,11 +21,14 @@
   top: 0;
   left: auto;
   right: 0;
+  mask-size: 27px 34px;
 }
 
 .copyright__link {
   text-decoration: none;
   color: #444444;
+  display: block;
+  padding: 7px 0;
 }
 
 .copyright__link:hover {
@@ -37,5 +42,16 @@
 @media (min-width: $tablet-width) {
   .copyright {
     width: 168px;
+    display: flex;
+  }
+
+  .copyright__link {
+    align-self: flex-start;
+    padding: 0;
+    padding-left: 5px;
+  }
+
+  .copyright::after {
+    top: -7px;
   }
 }

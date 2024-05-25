@@ -11,7 +11,7 @@
 
 .main-footer__link {
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 37px;
   position: relative;
   display: block;
 }
@@ -25,16 +25,24 @@
   left: 0;
 }
 
+.main-footer__logo-text {
+  width: 128px;
+  height: 24px;
+}
+
 @media (min-width: $tablet-width) {
   .main-footer__container {
     display: flex;
     place-content: center space-between;
     flex-direction: row;
+    padding: 64px 30px;
   }
 
   .main-footer__link {
-    width: 128px;
+    width: 168px;
     padding: 0;
+    // align-self: center;
+    text-align: start;
   }
 
   .main-footer__link::after {
