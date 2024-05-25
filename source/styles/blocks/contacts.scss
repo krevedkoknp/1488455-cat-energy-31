@@ -93,10 +93,16 @@
     min-height: 199px;
     background-color: #ffffff;
     position: absolute;
-    top: 100px;
+    top: 95px;
     left: 110px;
     padding: 60px 78px;
-    gap: 0;
+    padding-left: 80px;
+    gap: 87px;
+  }
+
+  .contacts__text {
+    text-align: start;
+
   }
 
   .contacts__map {

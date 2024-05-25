@@ -66,16 +66,3 @@
     mask-image: url("../../icons/stack.svg#slider-icon");
   }
 }
-
-@media (min-width: $tablet-width) {
-  .slider {
-    margin-bottom: 101px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .slider {
-    padding: 0;
-    margin-right: 110px;
-  }
-}

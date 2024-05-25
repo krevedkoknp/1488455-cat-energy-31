@@ -4,7 +4,7 @@
 }
 
 .main-footer__container {
-  padding: 40px 20px;
+  padding: 39px 20px;
   display: flex;
   flex-direction: column;
 }
@@ -35,12 +35,12 @@
     display: flex;
     place-content: center space-between;
     flex-direction: row;
-    padding: 64px 30px;
+    padding: 58px 30px;
   }
 
   .main-footer__link {
     width: 168px;
-    padding: 0;
+    padding: 6px 0;
     // align-self: center;
     text-align: start;
   }
@@ -52,7 +52,7 @@
 
 @media (min-width: $desktop-width) {
   .main-footer__container {
-    padding: 40px 110px;
+    padding: 66px 110px;
     width: 1440px;
     margin: 0 auto;
   }
