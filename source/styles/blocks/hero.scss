@@ -117,8 +117,9 @@
     min-height: 480px;
     margin-bottom: 72px;
   }
+
   .hero__container {
-  padding: 0 80px;
+    padding: 0 80px;
   }
 
   .hero__title {
@@ -144,12 +145,11 @@
   }
 
   .hero__slogan {
-  max-width: 600px;
-  padding: 0 80px;
+    max-width: 600px;
+    padding: 0 80px;
+  }
 
-}
-
-.hero__link {
-  margin: 0 80px;
-}
+  .hero__link {
+    margin: 0 80px;
+  }
 }

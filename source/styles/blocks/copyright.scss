@@ -44,15 +44,14 @@
     width: 168px;
     display: flex;
   }
+
   .copyright__link {
     align-self: flex-start;
-padding: 0;
-padding-left: 5px;
-
+    padding: 0;
+    padding-left: 5px;
   }
 
-  .copyright:after {
+  .copyright::after {
     top: -7px;
-
   }
 }

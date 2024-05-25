@@ -26,15 +26,14 @@
 }
 
 .main-footer__logo-text {
-width: 128px;
-height: 24px;
+  width: 128px;
+  height: 24px;
 }
 
 @media (min-width: $tablet-width) {
   .main-footer__container {
     display: flex;
-    align-content: center;
-    justify-content: space-between;
+    place-content: center space-between;
     flex-direction: row;
     padding: 64px 30px;
   }

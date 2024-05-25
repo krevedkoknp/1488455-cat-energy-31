@@ -60,9 +60,8 @@
     padding: 0;
   }
 
-  .present:before {
+  .present::before {
     height: 202px;
-
   }
 
   .present::after {

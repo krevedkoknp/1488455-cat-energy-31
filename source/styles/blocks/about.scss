@@ -63,7 +63,7 @@
 
 @media (min-width: $tablet-width) {
   .about {
-margin-bottom: 55px;
+    margin-bottom: 55px;
   }
 
   .about__title {
@@ -120,10 +120,13 @@ margin-bottom: 55px;
 }
 
 @media (min-width: $desktop-width) {
+  .about {
+    margin-bottom: 0;
+  }
+
   .about__list {
     padding: 0;
     grid-template-columns: repeat(auto-fill, 240px);
-    gap: 37px 70px;
-    justify-content: space-between;
+    gap: 37px 85px;
   }
 }
