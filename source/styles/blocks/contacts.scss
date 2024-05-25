@@ -26,7 +26,6 @@
   margin: 0;
   padding: 0;
   line-height: 20px;
-  text-align: end;
 }
 
 .contacts__map {
@@ -69,6 +68,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: end;
+
   }
 
   .contacts__map {
