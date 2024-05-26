@@ -172,10 +172,15 @@
       40px 0 0 0 #ffffff;
   }
 
-  .container__wrapper {
+  .addition__container {
     display: grid;
     grid-template-columns: 1fr 245px;
     gap: 80px;
+    margin-bottom: 96px;
+  }
+
+  .addition__wrapper {
+    margin: 0;
   }
 
   .addition__item {

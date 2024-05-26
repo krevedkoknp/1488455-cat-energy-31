@@ -137,11 +137,14 @@
     width: calc(100% - 8px);
     height: 2px;
     background-color: $bg-basik-accent;
-    bottom: 2px;
+    bottom: 4px;
     left: 4px;
     background-position: center;
   }
 
+  .navigation__link--index.navigation__link--current::after {
+    bottom: 2px;
+  }
 
   .navigation__item::before {
     display: none;
@@ -176,7 +179,7 @@
     color: #ffffff;
   }
 
-  .navigation__link--current::after {
+  .navigation__link--index.navigation__link--current::after {
     background-color: #ffffff;
   }
 }

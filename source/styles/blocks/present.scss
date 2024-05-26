@@ -14,10 +14,7 @@
   background-color: rgba(104, 183, 56, 0.85);
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  inset: 0;
 }
 
 .present::after {
@@ -110,7 +107,8 @@
     position: absolute;
     min-width: 161px;
     text-align: center;
-    bottom: 43px;
+    // bottom: 43px;
+    top: 64%;
     left: 50%;
     transform: translateX(-50%);
   }
