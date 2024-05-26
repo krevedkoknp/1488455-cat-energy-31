@@ -18,10 +18,10 @@
   mask-position: center;
   mask-repeat: no-repeat;
   position: absolute;
-  top: 0;
-  left: auto;
+  top: 50%;
   right: 0;
-  mask-size: 27px 34px;
+transform: translateY(-50%);
+mask-size: 27px 34px;
 }
 
 .copyright__link {
@@ -29,6 +29,7 @@
   color: #444444;
   display: block;
   padding: 7px 0;
+  margin-right: 35px;
 }
 
 .copyright__link:hover {

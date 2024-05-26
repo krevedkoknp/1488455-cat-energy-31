@@ -57,12 +57,17 @@
   border-radius: 20px;
   background-color: #ffffff;
   cursor: col-resize;
+  position: relative;
 
   &::before {
     content: "";
-    width: 100%;
-    height: 100%;
+    width: 24px;
+    height: 18px;
     background-color: currentColor;
     mask-image: url("../../icons/stack.svg#slider-icon");
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%);
   }
 }
