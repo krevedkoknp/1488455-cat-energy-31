@@ -245,7 +245,6 @@
 
   .product__item {
     padding: 10px 38px 40px;
-
   }
 
   .product__name {
@@ -288,7 +287,8 @@
   .product__item--all {
     height: 430px;
   }
+
   .product__wrapper-all::before {
-top: 78px;
+    top: 78px;
   }
 }

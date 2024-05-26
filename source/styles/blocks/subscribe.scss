@@ -91,6 +91,10 @@
     box-shadow: 40px 0 0 0 #ffffff;
   }
 
+  .subscribe__title::before {
+    top: 47%;
+  }
+
   .subscribe__text {
     font-size: 24px;
     line-height: 32px;
@@ -112,7 +116,15 @@
 
 @media (min-width: $desktop-width) {
   .subscribe {
-    padding-bottom: 104px;
+    margin-bottom: 104px;
+  }
+
+  .subscribe__form {
+    width: 752px;
+  }
+
+  .subscribe__field {
+    min-width: 496px;
   }
 
   .subscribe__title {
