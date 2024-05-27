@@ -92,17 +92,10 @@
     margin-bottom: 47px;
   }
 
-  .about__step {
-    margin: 0;
-    font-size: 16px;
-    line-height: 24px;
-  }
-
   .about__item::before {
     width: 80px;
     height: 80px;
   }
-
 
   .about__item::after {
     counter-increment: section;
@@ -116,6 +109,12 @@
     right: 0;
     z-index: -1;
     margin-left: auto;
+  }
+
+  .about__step {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 

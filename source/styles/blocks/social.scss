@@ -22,6 +22,7 @@
   flex-wrap: wrap;
 }
 
+
 .social__link::before {
   content: "";
   display: block;
@@ -35,9 +36,7 @@
 
 .social__link--vkontakte::before {
   mask-image: url("../../icons/stack.svg#vkontakte-icon");
-  // mask-size: 28px 22px;
-  // height: 22px;
-  // width: 28px;
+
 }
 
 .social__link--youtube::before {
@@ -51,6 +50,10 @@
 .social__link:hover::before {
   background-color: $bg-basik-accent;
   color: $bg-basik-accent;
+}
+
+.social__link:active:before {
+  background-color: rgba(104, 183, 56, 0.3);
 }
 
 @media (min-width: $tablet-width) {
