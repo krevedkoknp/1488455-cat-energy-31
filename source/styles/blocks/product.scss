@@ -36,6 +36,14 @@
   align-self: center;
 }
 
+.product__link--small {
+padding: 19px;
+}
+
+.product__link--big {
+  padding: 2px 16px;
+  }
+
 .product__order {
   grid-column: span 2;
 }
@@ -185,6 +193,12 @@
   .product__link {
     display: block;
     align-self: center;
+
+  }
+
+  .product__image {
+    width: 100%;
+    height: 100%;
   }
 
   .product__name {
