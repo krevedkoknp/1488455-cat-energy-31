@@ -78,7 +78,8 @@
   color: #000000;
   position: relative;
   font-family: $secondary-font;
-  padding: 4px 0;
+  padding: 4px 47px 4px 0;
+  align-self: flex-start;
 
   &:active {
     opacity: 0.3;
@@ -89,16 +90,23 @@
   content: "";
   display: block;
   background-image: url("../../icons/arrow-icon.svg");
-  background-size: 32px 10px;
+  background-size: 32px 12px;
   width: 32px;
   height: 10px;
-  background-position: center;
+  background-position: -8px;
   background-repeat: no-repeat;
   position: absolute;
   top: 50%;
-  left: 120px;
+  left: calc(100% - 30px);
   transform: translateY(-50%);
+  transition: background-position 0.3s;
 }
+
+.programs__link:hover::after {
+  background-position: 0;
+
+}
+
 
 @media (max-width: $mobile-width-only) {
   .programs__text::after {
@@ -172,6 +180,8 @@
   .programs__link {
     font-size: 20px;
     line-height: 30px;
+    padding: 4px 56px 4px 0;
+
   }
 }
 
