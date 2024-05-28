@@ -144,8 +144,7 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    max-width: 1440px;
-    margin: 0 auto;
+
     border-top: none;
     background-image: linear-gradient(to bottom, #ffffff 25%, #eaeaea 25%);
     padding-bottom: 70px;
@@ -156,6 +155,8 @@
     display: grid;
     grid-template-columns: 436px 560px;
     justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   .example__title {

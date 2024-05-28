@@ -74,10 +74,10 @@
 
   .about__list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 242px);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 280px;
     counter-reset: section;
-    gap: 37px 141px;
+    gap: 37px 142px;
     margin-bottom: 47px;
   }
 
@@ -106,7 +106,7 @@
     color: $bg-secondary;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 115px;
     z-index: -1;
     margin-left: auto;
   }
@@ -125,7 +125,7 @@
 
   .about__list {
     padding: 0;
-    grid-template-columns: repeat(auto-fill, 240px);
-    gap: 37px 85px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 37px 80px;
   }
 }

@@ -36,7 +36,6 @@
 
 .social__link--vkontakte::before {
   mask-image: url("../../icons/stack.svg#vkontakte-icon");
-
 }
 
 .social__link--youtube::before {
@@ -52,7 +51,7 @@
   color: $bg-basik-accent;
 }
 
-.social__link:active:before {
+.social__link:active::before {
   background-color: rgba(104, 183, 56, 0.3);
 }
 

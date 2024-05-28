@@ -36,10 +36,9 @@
   mask-size: 27px 34px;
 }
 
-.copyright__link:hover:after {
+.copyright__link:hover::after {
   background-color: $bg-basik-accent;
 }
-
 
 
 @media (min-width: $tablet-width) {
