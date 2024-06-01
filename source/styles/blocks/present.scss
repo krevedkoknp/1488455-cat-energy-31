@@ -46,13 +46,20 @@
   transform: translateX(-50%);
 }
 
+
+@media (min-resolution: 2dppx) and (max-width: $mobile-width-only)  {
+  .present {
+    background-image: url("../../images/background/present-background@2x.png");
+}
+}
+
 @media (min-width: $tablet-width) {
   .present {
     background-color: $bg-basik-accent;
     background-image: url("../../images/background/present-background-tablet@1x.png");
     width: 100%;
     min-height: 200px;
-    background-position: center;
+    background-position-y: 60%;
     margin: 0;
     padding: 0;
   }
@@ -73,6 +80,12 @@
     transform: translateY(-50%);
     width: 161px;
   }
+}
+
+@media (min-resolution: 2dppx) and (min-width: $tablet-width)  {
+  .present {
+    background-image: url("../../images/background/present-background-tablet@2x.png");
+}
 }
 
 @media (min-width: $desktop-width) {
@@ -111,4 +124,10 @@
     left: 50%;
     transform: translateX(-50%);
   }
+}
+
+@media (min-resolution: 2dppx) and (min-width: $desktop-width)  {
+  .present {
+    background-image: url("../../images/background/present-background-desktop@2x.png");
+}
 }
