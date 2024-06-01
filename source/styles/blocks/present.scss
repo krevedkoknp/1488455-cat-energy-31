@@ -1,7 +1,12 @@
 .present {
   margin: 0;
   padding: 0;
-  background-image: url("../../images/background/present-background@1x.png");
+  background-image:
+    image-set(
+      url("../../images/background/present-background@2x.webp") 2x type("image/webp"),
+      url("../../images/background/present-background@2x.png") 2x type("image/png"),
+      url("../../images/background/present-background@1x.webp") 1x type("image/webp"),
+      url("../../images/background/present-background@1x.png") 1x type("image/png"));
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -46,17 +51,16 @@
   transform: translateX(-50%);
 }
 
-
-@media (min-resolution: 2dppx) and (max-width: $mobile-width-only)  {
-  .present {
-    background-image: url("../../images/background/present-background@2x.png");
-}
-}
-
 @media (min-width: $tablet-width) {
   .present {
     background-color: $bg-basik-accent;
-    background-image: url("../../images/background/present-background-tablet@1x.png");
+    background-image:
+      image-set(
+        url("../../images/background/present-background-tablet@2x.webp") 2x type("image/webp"),
+        url("../../images/background/present-background-tablet@2x.png") 2x type("image/png"),
+        url("../../images/background/present-background-tablet@1x.webp") 1x type("image/webp"),
+        url("../../images/background/present-background-tablet@1x.png") 1x type("image/png"),
+      );
     width: 100%;
     min-height: 200px;
     background-position-y: 60%;
@@ -82,16 +86,15 @@
   }
 }
 
-@media (min-resolution: 2dppx) and (min-width: $tablet-width)  {
-  .present {
-    background-image: url("../../images/background/present-background-tablet@2x.png");
-}
-}
-
 @media (min-width: $desktop-width) {
   .present {
     background-color: $bg-basik-accent;
-    background-image: url("../../images/background/present-background-desktop@1x.png");
+    background-image:
+      image-set(
+        url("../../images/background/present-background-desktop@2x.webp") 2x type("image/webp"),
+        url("../../images/background/present-background-desktop@2x.png") 2x type("image/png"),
+        url("../../images/background/present-background-desktop@1x.webp") 1x type("image/webp"),
+        url("../../images/background/present-background-desktop@1x.png") 1x type("image/png"));
     width: 245;
     height: 288;
     background-position: center;
@@ -124,10 +127,4 @@
     left: 50%;
     transform: translateX(-50%);
   }
-}
-
-@media (min-resolution: 2dppx) and (min-width: $desktop-width)  {
-  .present {
-    background-image: url("../../images/background/present-background-desktop@2x.png");
-}
 }
