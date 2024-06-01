@@ -60,13 +60,18 @@
   margin-bottom: 16px;
   border: 1px solid #e7e7e7;
   padding: 12px;
+  outline-offset: -2px;
 
   &:hover {
     border: 1px solid $bg-middle;
   }
 
+  &:user-invalid {
+    outline: 2px solid #ff8282;
+  }
+
   &:focus {
-    border: 1px solid $base-color;
+    outline: 2px solid $base-color;
   }
 }
 
