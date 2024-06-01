@@ -25,9 +25,9 @@
   background-color: #d9d9d9;
   position: absolute;
   height: 1px;
-  width: 100%;
   bottom: 0;
-  left: 0;
+  width: calc(100% + 40px);
+  left: -20px;
 }
 
 .navigation__link {
@@ -56,7 +56,7 @@
     cursor: pointer;
     width: 24px;
     height: 24px;
-    top: -46px;
+    top: -45px;
     right: 1px;
     margin: 0;
     padding: 0;
@@ -106,16 +106,18 @@
     opacity: 0.5;
   }
 
-  .navigation--closed .navigation__list {
-    display: none;
+  .navigation--opened .navigation__list::before {
+    content: "";
+    background-color: #d9d9d9;
+    position: absolute;
+    height: 1px;
+    top: 0;
+    width: calc(100% + 40px);
+    left: -20px;
   }
 
-  .navigation--opened .navigation__list {
-    position: absolute;
-    top: 0;
-    left: -20px;
-    width: calc(100% + 40px);
-    z-index: 1;
+  .navigation--closed .navigation__list {
+    display: none;
   }
 }
 
