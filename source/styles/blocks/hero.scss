@@ -34,16 +34,15 @@
 @media (max-width: $mobile-width-only) {
   .hero {
     background-image:
-    image-set(
-      url("../../images/background/hero-background@2x.webp") 2x type("image/webp"),
-      url("../../images/background/hero-background@2x.jpg") 2x type("image/jpg"),
-      url("../../images/background/hero-background@1x.webp") 1x type("image/webp"),
-      url("../../images/background/hero-background@1x.jpg") 1x type("image/jpg"));
-      background-size: 280px 270px;
+      image-set(
+        url("../../images/background/hero-background@2x.webp") 2x type("image/webp"),
+        url("../../images/background/hero-background@2x.jpg") 2x type("image/jpg"),
+        url("../../images/background/hero-background@1x.webp") 1x type("image/webp"),
+        url("../../images/background/hero-background@1x.jpg") 1x type("image/jpg"));
+    background-size: 280px 270px;
     background-position: top;
     background-repeat: no-repeat;
   }
-
 
   .hero__container {
     background-image:
