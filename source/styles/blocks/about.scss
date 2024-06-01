@@ -3,12 +3,6 @@
 }
 
 .about__title {
-  font-family: $secondary-font;
-  font-size: 36px;
-  line-height: 40px;
-  font-weight: 400;
-  color: #000000;
-  margin: 0;
   margin-bottom: 40px;
 }
 
@@ -67,14 +61,12 @@
   }
 
   .about__title {
-    font-size: 60px;
-    line-height: 60px;
     margin-bottom: 32px;
   }
 
   .about__list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, 242px);
     grid-template-rows: 280px;
     counter-reset: section;
     gap: 37px 142px;
@@ -103,7 +95,7 @@
     font-family: $secondary-font;
     font-size: 280px;
     line-height: 280px;
-    color: $bg-secondary;
+    color: $bg-superlight;
     position: absolute;
     top: 0;
     left: 115px;
@@ -112,7 +104,6 @@
   }
 
   .about__step {
-    margin: 0;
     font-size: 16px;
     line-height: 24px;
   }

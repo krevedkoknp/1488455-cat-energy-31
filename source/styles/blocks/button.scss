@@ -6,7 +6,7 @@
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  color: #ffffff;
+  color: $bg-basik;
   padding: 10px 20px;
 
   &:hover {
@@ -20,11 +20,11 @@
 }
 
 .button--all {
-  background-color: #f2f2f2;
-  color: $base-color-text;
+  background-color: $bg-superlight;
+  color: $base-color;
 
   &:hover,
   &:active {
-    background-color: #ebebeb;
+    background-color: $bg-light;
   }
 }
