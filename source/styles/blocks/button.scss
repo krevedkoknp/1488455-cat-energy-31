@@ -6,11 +6,25 @@
   text-transform: uppercase;
   text-align: center;
   text-decoration: none;
-  color: #ffffff;
+  color: $bg-basik;
   padding: 10px 20px;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--all {
-  background-color: #f2f2f2;
-  color: $base-color-text;
+  background-color: $bg-superlight;
+  color: $base-color;
+
+  &:hover,
+  &:active {
+    background-color: $bg-light;
+  }
 }

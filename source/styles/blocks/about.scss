@@ -3,12 +3,6 @@
 }
 
 .about__title {
-  font-family: $secondary-font;
-  font-size: 36px;
-  line-height: 40px;
-  font-weight: 400;
-  color: #000000;
-  margin: 0;
   margin-bottom: 40px;
 }
 
@@ -67,8 +61,6 @@
   }
 
   .about__title {
-    font-size: 60px;
-    line-height: 60px;
     margin-bottom: 32px;
   }
 
@@ -77,7 +69,7 @@
     grid-template-columns: repeat(auto-fill, 242px);
     grid-template-rows: 280px;
     counter-reset: section;
-    gap: 37px 141px;
+    gap: 37px 142px;
     margin-bottom: 47px;
   }
 
@@ -92,17 +84,10 @@
     margin-bottom: 47px;
   }
 
-  .about__step {
-    margin: 0;
-    font-size: 16px;
-    line-height: 24px;
-  }
-
   .about__item::before {
     width: 80px;
     height: 80px;
   }
-
 
   .about__item::after {
     counter-increment: section;
@@ -110,12 +95,17 @@
     font-family: $secondary-font;
     font-size: 280px;
     line-height: 280px;
-    color: $bg-secondary;
+    color: $bg-superlight;
     position: absolute;
     top: 0;
-    right: 0;
+    left: 115px;
     z-index: -1;
     margin-left: auto;
+  }
+
+  .about__step {
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -126,7 +116,7 @@
 
   .about__list {
     padding: 0;
-    grid-template-columns: repeat(auto-fill, 240px);
-    gap: 37px 85px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 37px 80px;
   }
 }

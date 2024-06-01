@@ -1,22 +1,9 @@
-.addition__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  display: flex;
-  flex-flow: column wrap;
-}
-
-.addition__item {
-  margin-bottom: 19px;
-  position: relative;
-}
-
 .addition__title {
-  font-family: "Oswald", sans-serif;
+  font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
-  color: #000000;
+  color: $base-color-text;
   margin: 0;
   padding: 0;
   margin-bottom: 36px;
@@ -38,11 +25,26 @@
   z-index: -1;
 }
 
+.addition__wrapper {
+  margin-bottom: 36px;
+}
+
+.addition__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.addition__item {
+  padding: 13px 0 19px;
+  position: relative;
+}
 
 .addition__link {
   text-decoration: none;
   display: block;
-  padding-top: 13px;
   padding-bottom: 13px;
 }
 
@@ -58,7 +60,7 @@
 }
 
 .addition__product {
-  margin-bottom: 15px;
+  margin-bottom: 13px;
   line-height: 14px;
   display: flex;
   justify-content: space-between;
@@ -68,29 +70,13 @@
   display: block;
 }
 
-.addition__wrapper {
-  margin-bottom: 35px;
-}
-
 @media (max-width: $mobile-width-only) {
-  .addition__item::before {
-    content: "";
-    border-top: 1px solid #ebebeb;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    // z-index: -1;
+  .addition__item {
+    border-top: 1px solid $bg-light;
   }
 
-  .addition__item:last-child::before {
-    content: "";
-    border-bottom: 1px solid #ebebeb;
-    width: 100%;
-    position: absolute;
-    bottom: -19px;
-    left: 0;
-    // z-index: -1;
+  .addition__item:last-child {
+    border-bottom: 1px solid $bg-light;
   }
 }
 
@@ -109,6 +95,10 @@
 
   .addition__title::before {
     top: 43%;
+  }
+
+  .addition__wrapper {
+    margin-bottom: 68px;
   }
 
   .addition__list {
@@ -151,17 +141,9 @@
   .addition__button {
     grid-column: 1 / -1;
   }
-
-  .addition__wrapper {
-    margin-bottom: 70px;
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .addition__list {
-    border: none;
-  }
-
   .addition__title {
     padding: 0;
     font-size: 40px;
@@ -172,10 +154,19 @@
       40px 0 0 0 #ffffff;
   }
 
-  .container__wrapper {
+  .addition__container {
     display: grid;
     grid-template-columns: 1fr 245px;
     gap: 80px;
+    margin-bottom: 96px;
+  }
+
+  .addition__wrapper {
+    margin: 0;
+  }
+
+  .addition__list {
+    border: none;
   }
 
   .addition__item {

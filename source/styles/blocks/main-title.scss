@@ -1,0 +1,16 @@
+.main-title {
+  font-family: $secondary-font;
+  margin: 0;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  color: $base-color-text;
+}
+
+@media (min-width: $tablet-width) {
+  .main-title {
+    font-size: 60px;
+    line-height: 60px;
+    color: $base-color-text;
+  }
+}
