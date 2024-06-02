@@ -67,9 +67,9 @@
   .about__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, 242px);
-    grid-template-rows: 280px;
+    grid-template-rows: min-content;
     counter-reset: section;
-    gap: 37px 142px;
+    gap: 47px 142px;
     margin-bottom: 47px;
   }
 
@@ -118,5 +118,7 @@
     padding: 0;
     grid-template-columns: repeat(4, 1fr);
     gap: 37px 80px;
+    grid-template-rows: min-content;
+    margin-bottom: 60px;
   }
 }
