@@ -26,8 +26,8 @@
   position: absolute;
   height: 1px;
   bottom: 0;
-  width: calc(100% + 40px);
-  left: -20px;
+  width: 100%;
+  left: 0;
 }
 
 .navigation__link {
@@ -48,6 +48,7 @@
 
 
 @media (max-width: $mobile-width-only) {
+
   .navigation__toggle {
     position: absolute;
     display: block;
@@ -70,6 +71,10 @@
     }
   }
 
+  .main-header__container .navigation--closed {
+    display: flex;
+  }
+
   .navigation--closed .navigation__toggle::before {
     content: "";
     position: absolute;
@@ -86,6 +91,19 @@
 
   .navigation--closed .navigation__toggle:active::before {
     opacity: 0.5;
+    background-color: $bg-basik-accent;
+  }
+
+  .navigation--closed .navigation__list {
+    display: none;
+  }
+
+  .navigation--opened .navigation__list {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    width: calc(100% + 40px);
+    z-index: 1;
   }
 
   .navigation--opened .navigation__toggle::before {
@@ -106,7 +124,33 @@
     opacity: 0.5;
   }
 
-  .navigation--opened .navigation__list::before {
+  // .navigation--opened .navigation__list::before {
+  //   content: "";
+  //   background-color: #d9d9d9;
+  //   position: absolute;
+  //   height: 1px;
+  //   top: 0;
+  //   width: calc(100% + 40px);
+  //   left: -20px;
+  // }
+
+  // .navigation--opened .navigation__list {
+  //   position: absolute;
+  //   top: 0;
+  //   left: -20px;
+  //   width: calc(100% + 40px);
+  //   z-index: 1;
+  // }
+
+  .navigation--nojs .navigation__toggle {
+    display: none;
+  }
+
+  .navigation--nojs .navigation__wrapper {
+    position: relative;
+  }
+
+  .navigation--nojs .navigation__wrapper::before {
     content: "";
     background-color: #d9d9d9;
     position: absolute;
@@ -115,10 +159,28 @@
     width: calc(100% + 40px);
     left: -20px;
   }
-
-  .navigation--closed .navigation__list {
-    display: none;
+  .navigation--nojs .navigation__list {
+    display: block;
+    position: static;
+    min-height: 0;
+    width: 100%;
+    left: 0;
   }
+
+  .main-header__container .navigation--nojs {
+    display: block;
+
+  }
+  .navigation--nojs .navigation__item::before {
+    width: calc(100% + 40px);
+    left: -20px;
+  }
+
+
+  // .navigation--nojs .navigation__item {
+  //   display: block;
+  // }
+
 }
 
 @media (min-width: $tablet-width) {
