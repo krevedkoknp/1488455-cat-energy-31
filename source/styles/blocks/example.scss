@@ -136,9 +136,8 @@
 
 @media (min-width: $desktop-width) {
   .example {
-
     border-top: none;
-    background-image: linear-gradient(to bottom, $bg-basik 25%, #eaeaea 25%);
+    background-image: linear-gradient(to bottom, $bg-basik 155px, #eaeaea 155px);
     padding-bottom: 70px;
   }
 
