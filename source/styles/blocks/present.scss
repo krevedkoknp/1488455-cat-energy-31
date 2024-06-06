@@ -55,11 +55,11 @@
   .present {
     background-color: $bg-basik-accent;
     background-image:
-      image-set(
+        image-set(
         url("../../images/background/present-background-tablet@2x.webp") 2x type("image/webp"),
         url("../../images/background/present-background-tablet@2x.jpg") 2x type("image/jpg"),
         url("../../images/background/present-background-tablet@1x.webp") 1x type("image/webp"),
-        url("../../images/background/present-background-tablet@1x.jpg") 1x type("image/jpg"),
+        url("../../images/background/present-background-tablet@1x.jpg") 1x type("image/jpg")
       );
     width: 100%;
     min-height: 200px;
